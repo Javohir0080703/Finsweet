@@ -2,8 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
+@layer utilities {
     .containerb {
         @apply w-full max-w-[1280px] mx-auto px-5
+    }
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-lanier {
+    background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+}
+
+.bg-whidth {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.swiper-button-next {
+    right: 0;
+    top: 202px;
+    color: white;
+    background-color: #5239FA;
+    padding: 25px;
+    border-radius: 96px;
+}
+
+.swiper-button-prev {
+    left: 730px;
+    top: 202px;
+    color: #282938;
+    background-color: white;
+    opacity: 0.6;
+    padding: 25px;
+    border-radius: 96px;
+
+}
+
+:root {
+    --swiper-navigation-size: 25px;
+}
+
+@media only screen and (max-width:900px){
+    .swiper-button-prev {
+        left: 330px;
+        color: white;
+        background-color: #5239FA;
+        opacity: 1;
+        
+    
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .swiper-button-prev {
+        left: 200px;
+        color: white;
+        background-color: #5239FA;
+        opacity: 1;
+        top: 180px;
+    
+    }
+
+    .swiper-button-next{
+        top: 180px;
+    }
+}
+
+@media only screen and (max-width:556px){
+    .swiper-button-prev {
+        left: 220px;
+        color: white;
+        background-color: #5239FA;
+        opacity: 1;
+        top: 250px;
+    
+    }
+
+    .swiper-button-next{
+        top: 250px;
+    }
+}
+@media only screen and (max-width:539px){
+    .swiper-button-prev {
+        left: 220px;
+        color: white;
+        background-color: #5239FA;
+        opacity: 1;
+        top: 180px;
+    
+    }
+
+    .swiper-button-next{
+        top: 180px;
+    }
+}
+@media only screen and (max-width:370px){
+    .swiper-button-prev {
+        left: 220px;
+        color: white;
+        background-color: #5239FA;
+        opacity: 1;
+        top: 180px;
+        display: none;
+    }
+
+    .swiper-button-next{
+        top: 180px;
+        display: none;
     }
 }
