@@ -12,7 +12,8 @@ module.exports = withMT ({
         '#1B1C2B':'#1B1C2B',
         '#2405F2':'#2405F2',
         '#F4F6FC':'#F4F6FC',
-        '#FCD980':'#FCD980'
+        '#FCD980':'#FCD980',
+        '#F4F5F5':'#F4F5F5'
       },
       backgroundImage: {
         'home-cta': "url('./img/homebg.png')",
