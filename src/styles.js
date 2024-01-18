@@ -14,6 +14,11 @@ import nikita from './img/nikita.jpg'
 import apple from './img/apple.png'
 import arabic from './img/arabic.png'
 import womanin from './img/womanin.png'
+import serios from './img/serious.png'
+import man from './img/man-inikki.png'
+import transgender from './img/transgender.png'
+import manin from './img/man-in-black.png'
+
 
 export const homework = [
     {
@@ -188,4 +193,75 @@ export const ourblog = [
         data:'19 Jan 2022',
         p:'See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract'
     }
+]
+
+export const procces = [
+    {
+        id:1,
+        title:'Planning',
+        text:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+    },
+    {
+        id:2,
+        title:'Conception',
+        text:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+    },
+    {
+        id:3,
+        title:'Design',
+        text:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+    },
+    {
+        id:4,
+        title:'Development',
+        text:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+    },
+]
+
+export const benefitsdata = [
+    {
+        id: 1,
+        title: 'Uses Client First',
+        text: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ',
+        img:icon
+    },
+    {
+        id: 2,
+        title: 'Two Free Revision Round',
+        text: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ',
+       img:icon1
+    },
+    {
+        id: 3,
+        title: 'Template Customization',
+        text: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ',
+       img:icon2
+    },
+]
+
+export const ourteamdata = [
+    {
+        id:1,
+        title:'John Smith',
+        theme:'CEO',
+        img:manin
+    },
+    {
+        id:2,
+        title:'Simon Adams',
+        theme:'CTO',
+        img:serios
+    },
+    {
+        id:3,
+        title:'Paul Jones',
+        theme:'Design Lead',
+        img:man
+    },
+    {
+        id:4,
+        title:'Sara Hardin',
+        theme:'Project Manager',
+        img:transgender
+    },
 ]
