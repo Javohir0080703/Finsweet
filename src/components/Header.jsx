@@ -69,9 +69,9 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <button className='text-white text-base font-medium leading-7 w-full max-w-[188px] block px-12 py-4  bg-transparent border-2 border-white/[0.2] rounded-[41px]'>
+          <Link to="/contact" className='text-white text-base font-medium leading-7 w-full max-w-[188px] block px-12 py-4  bg-transparent border-2 border-white/[0.2] rounded-[41px]'>
             Contact us
-          </button>
+          </Link>
         </div>
 
         <button onClick={handleopen} className='qqq:hidden block py-3 px-3 border-2 rounded-[50%]'>
