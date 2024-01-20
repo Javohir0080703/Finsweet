@@ -7,7 +7,7 @@ const HomeHero = () => {
             <div className='containerb block qqq:flex items-center justify-between'>
                 <div>
                     <h2 className='sss:text-[54px] text-center qqq:text-left text-[40px] font-semibold leading-[55px] sss:leading-[74px] text-white mb-6'>
-                        Building stellar websites <br className='block qqq:hidden' /> for early    startups
+                        Building stellar websites <br className='hidden qqq:block' /> for early    startups
                     </h2>
                     <p className='text-white text-base leading-7 mb-12  text-center qqq:text-left'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br className='block qqq:hidden' /> sed do <br className='hidden sss:block' /> eiusmod tempor incididunt.

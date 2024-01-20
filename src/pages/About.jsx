@@ -6,6 +6,7 @@ import Inspire from '../components/Inspire'
 import Benefits from '../components/Benefits'
 import OurTeam from '../components/OurTeam'
 import Cta from '../components/Cta'
+import Partners from '../components/Partners'
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
     <Procces/>
     <Inspire/>
     <Benefits/>
+    <Partners/> 
     <OurTeam/>
     <Cta/>
     </>

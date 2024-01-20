@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Pricing = () => {
+   const [ buy, setBuy ] = useState();
+   const handleTab = ()=>{
+    alert("Система временна не работает")
+   }
+
   return (
     <section className='py-[128px] bg-white'>
       <div className='containerb'>
