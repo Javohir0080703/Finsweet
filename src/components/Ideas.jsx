@@ -2,7 +2,7 @@ import React from 'react'
 import main from '../img/man-in.png'
 const Ideas = () => {
   return (
-    <section className='pt-20  pb-[128px]'>
+    <section className='pt-20  pb-[128px] z-0'>
         <div className='containerb'>
           <div className='640px:flex block items-center justify-evenly   py-20 bg-#F4F5F5'>
             <div className='block mb-10 640px:mb-0'>

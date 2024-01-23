@@ -5,7 +5,7 @@ import aman from '../img/a-man-working.png'
 import person from '../img/person-using.png'
 const FeaturesBlog = () => {
   return (
-    <section className=' '>
+    <section className='z-0 '>
         <div className='bg-white py-[128px]'>
            <div className='containerb block sss:flex items-center justify-between'>
               <div>

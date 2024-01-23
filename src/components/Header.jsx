@@ -76,14 +76,14 @@ const Header = () => {
 
         <button onClick={handleopen} className='qqq:hidden block py-3 px-3 border-2 rounded-[50%]'>
           <svg className='space-y-1' xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 16 16" fill="none">
-            <path d="M1 8H25" stroke="#fff" stroke-width="2" />
-            <path d="M1 12H25" stroke="#fff" stroke-width="2" />
-            <path d="M1 4H25" stroke="#fff" stroke-width="2" />
+            <path d="M1 8H25" stroke="#fff"  />
+            <path d="M1 12H25" stroke="#fff" />
+            <path d="M1 4H25" stroke="#fff"  />
           </svg>
         </button>
       </div>
      { closeModal && (
-       <div className='qqq:hidden block px-5 pt-[41px] h-full w-full top-0 left-0 min-w-[100vw] fixed bg-#1C1E53 min-h-[100vh]'>
+       <div className='qqq:hidden block px-5 pt-[41px] h-full w-full z-50 top-0 left-0 min-w-[100vw] fixed bg-#1C1E53 min-h-[100vh]'>
        <div className='flex items-center justify-between mb-10'>
          <Link to="/">
            <svg xmlns="http://www.w3.org/2000/svg" width="122" height="25" viewBox="0 0 122 25" fill="none">

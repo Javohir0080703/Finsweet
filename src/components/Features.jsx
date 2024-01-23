@@ -2,7 +2,7 @@ import React from 'react'
 import { featur } from '../styles'
 const Features = () => {
   return (
-    <section className='py-[128px] bg-#F4F6FC'>
+    <section className='py-[128px] bg-#F4F6FC z-0'>
         <div className='containerb'>
             <span className='text-#282938 text-base font-medium leading-7 text-center block mb-3'>Features</span>
             <h2 className='eee:text-5xl text-2xl text-center font-semibold leading-[35px] eee:leading-[64px] mb-12'>
@@ -13,7 +13,7 @@ const Features = () => {
                 {
                     featur.map((e)=>{
                         return(
-                            <li className='w-full max-w-[405px] bg-white pt-[58px] pb-12 pl-12 pr-8' key={e.id}>
+                            <li key={e.id} className='w-full max-w-[405px] bg-white pt-[58px] pb-12 pl-12 pr-8' >
                                 <img className='mb-[22px]' src={e.img} alt="" />
                                 <h3 className='text-#282938 text-2xl font-medium leadidng-[36px] mb-3'>
                                     {e.title}

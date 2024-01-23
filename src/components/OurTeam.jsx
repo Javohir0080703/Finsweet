@@ -3,7 +3,7 @@ import { ourteamdata } from '../styles'
 
 const OurTeam = () => {
   return (
-    <section className='py-[128px] bg-#F4F6FC '>
+    <section className='py-[128px] bg-#F4F6FC z-0'>
         <div className='containerb'>
          <h1 className='text-#282938 aaa:text-5xl  text-2xl font-semibold leading-[64px] mb-12 text-center'>Meet our team</h1>
 

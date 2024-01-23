@@ -3,7 +3,7 @@ import { benefitsdata } from '../styles'
 
 const Benefits = () => {
     return (
-        <section className='pt-[128px] bg-white'>
+        <section className='pt-[128px] bg-white z-0'>
             <div className='containerb'>
                 <h2 className='text-#282938 text-5xl font-semibold text-center leading-[64px] mb-12'>The benefits of working <br /> with us</h2>
 

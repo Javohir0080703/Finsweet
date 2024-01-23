@@ -19,7 +19,7 @@ const Accardion = () => {
 
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
   return (
-   <section className='py-[128px] bg-white'>
+   <section className='py-[128px] bg-white z-0'>
     <div className='containerb'>
     <div className='tabletmax:flex block justify-between '>
           <div>
@@ -31,7 +31,7 @@ const Accardion = () => {
           <div className='w-full max-w-[843px] mx-auto tabletmax:mx-0 mt-10 tabletmax:mt-0 transition-all'>
             {mainFaqs.slice(0, 5).map((faq) => {
               return (
-                <Accordion className='' key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
+                <Accordion key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
                   <AccordionHeader className="flex items-center text-xs ddd:text-base eee:text-xl  py-5" onClick={() => handleOpen(faq.id)}>
                     <span className='text-#2405F2 text-base eee:text-2xl font-medium leading-4 eee:leading-9'>{faq.number}</span>  {faq.title}
                   </AccordionHeader>

@@ -17,7 +17,7 @@ const Home = () => {
      <Features/>
      <Clients/>
      <Accardion/>
-     <HomeAccordion/>
+     <HomeAccordion/> 
      <Cta/>
     </>
   )

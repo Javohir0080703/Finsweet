@@ -8,7 +8,7 @@ import { clients } from "../styles";
 const Clients = () => {
 
     return (
-        <section className='py-[129px]   bg-#F4F6FC/[0.5]'>
+        <section className='py-[129px]   bg-#F4F6FC/[0.5] z-0'>
             <div className='containerb block sss:flex justify-between'>
                 <div>
                     <h2 className='text-#282938 text-center sss:text-left text-[38px] font-semibold leading-[56px] mb-4 '>
@@ -27,7 +27,7 @@ const Clients = () => {
                         {
                             clients.map((slideTitle) => {
                                 return (
-                                    <SwiperSlide  key={slideTitle.id} className="">
+                                    <SwiperSlide  key={slideTitle.id} >
                                         <p className="w-full max-w-[823px] md:text-[32px] text-2xl  font-medium leading-[30px] eee:leading-[48px] mb-10">{slideTitle.text}</p>
                                         <div className="flex items-center ">
                                             <img className="w-full max-w-[58px]     mr-2.5 rounded-[96px]" src={slideTitle.img} alt={slideTitle.name} />

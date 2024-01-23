@@ -1,20 +1,52 @@
-import React from 'react'
-
-import { mainFaqs, ourblog } from '../styles';
-
+import React, { useState } from 'react'
+// import sendToTelegram from '../TelegramBot';
+import { ourblog } from '../styles';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const HomeAccordion = () => {
-
   const [open, setOpen] = React.useState(0);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  // window
+  // const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const handleButtonClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // input
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const telegram_bot_id = '6449286041:AAHA1VJlhGPS3QKrpeGowx9wGPjhgJ6W53Q';
+    const chat_id = '5659934636';
+
+    const telegramMessage = `Ismi: ${name}\nEmail: ${email}\nFigma design URL: ${message}`;
+
+    axios
+      .post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
+        chat_id,
+        text: telegramMessage,
+      })
+      .then((response) => {
+        console.log(response.data);
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      // .catch((error) => {
+      //   console.error(error);
+      // });
+  };
+
 
   return (
-    <section className='pb-[128px] bg-white '>
+    <section className='pb-[128px] bg-white z-0'>
       <div className='containerb'>
 
         <div className=' bg-white/[0.05]'>
-        <div className='mb-10 block sss:hidden'>
+          <div className='mb-10 block sss:hidden'>
             <h2 className='text-#1C1E53 mb-6 text-[54px] font-semibold leading-[74px] text-center'>Building stellar <br /> websites for <br /> early startups</h2>
             <p className='text-#1C1E53 text-base font-medium leading-7 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua ut enim.</p>
           </div>
@@ -29,20 +61,23 @@ const HomeAccordion = () => {
               <h2 className='text-white text-[32px] font-medium leading-[48px] mb-4'>Send inquiry</h2>
               <p className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 
-              <form className='space-y-4 mb-7'>
-                <input className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="text" placeholder='Your Name' />
-                <input className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="email" placeholder='Email' />
-                <input className='pl-8 py-[18px] w-full mb-10 max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="url" placeholder='Paste your Figma design URL' />
+              <form onSubmit={handleSubmit} className='space-y-4 mb-7'>
+                <input value={name}
+                  onChange={(e) => setName(e.target.value)} className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="text" placeholder='Your Name' />
+                <input value={email}
+                  onChange={(e) => setEmail(e.target.value)} className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="email" placeholder='Email' />
+                <input value={message}
+                  onChange={(e) => setMessage(e.target.value)} className='pl-8 py-[18px] w-full mb-10 max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="url" placeholder='Paste your Figma design URL' />
 
-                <button className='py-4 mt-10 aaa:px-[51px] px-5  w-full max-w-[200px] aaa:max-w-[432px] block bg-#FCD980 rounded-[41px] text-#1B1C2B text-sm aaa:text-lg font-semibold leading-8'>Send an Inquiry</button>
+                <button type="submit" className='py-4 mt-10 aaa:px-[51px] px-5  w-full max-w-[200px] aaa:max-w-[432px] block bg-#FCD980 rounded-[41px] text-#1B1C2B text-sm aaa:text-lg font-semibold leading-8'>Send an Inquiry</button>
               </form>
 
-              <button className='text-white w-full text-sm aaa:leading-4 aaa:max-w-[244px] max-w-[150px]  mx-auto aaa:text-lg font-medium leading-8 flex items-center'>
+              <Link to="/contact" onClick={handleButtonClick} className='text-white w-full text-sm aaa:leading-4 aaa:max-w-[244px] max-w-[150px]  mx-auto aaa:text-lg font-medium leading-8 flex items-center'>
                 Get in touch with us
                 <svg className='ml-5' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">
                   <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#F4F6FC" />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -61,12 +96,12 @@ const HomeAccordion = () => {
                     <p className='text-#282938 text-base font-medium leading-7 opacity-[0.7] mb-4'>{blog.data}</p>
                     <p className='text-#282938 text-2xl font-medium leading-9 mb-4'>{blog.text}</p>
                     <p className='text-#282938 text-base leading-7 mb-8'>{blog.p}</p>
-                    <button className='text-#282938 text-base font-medium leading-7 flex items-center'>
+                    <Link to="/Blog" onClick={handleButtonClick} className='text-#282938 text-base font-medium leading-7 flex items-center'>
                       Read More
                       <svg className='ml-3' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">
                         <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#282938" />
                       </svg>
-                    </button>
+                    </Link>
                   </li>
                 )
               })

@@ -6,9 +6,12 @@ const Pricing = () => {
    const handleTab = ()=>{
     alert("Система временна не работает")
    }
+   const handleButtonClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   return (
-    <section className='py-[128px] bg-white'>
+    <section className='py-[128px] bg-white z-0'>
       <div className='containerb'>
         <h1 className='text-#282938 text-center text-5xl font-semibold leading-[64px] mb-4'>Our Pricing Plans</h1>
         <p className='text-center text-#282938 text-base font-medium leading-7 mb-16'>When you’re ready to go beyond prototyping in Figma, Webflow is <br /> ready to help you bring your designs to life — without coding them.</p>
@@ -89,7 +92,7 @@ const Pricing = () => {
                 <p className='text-#282938 text-base leading-7 ml-3 '>Unlimited users</p>
               </li>
             </ul>
-            <Link to="/contact" className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#F4F6FC aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
+            <Link to="/contact" onClick={handleButtonClick} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#F4F6FC aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
           </li>
           <li className='w-full max-w-[406px] mx-auto tabletmax:mx-0 py-10 aaa:py-[64px] px-6 aaa:px-12  bg-#1C1E53 rounded-xl'>
             <div className='aaa:flex block items-center mb-5'>
@@ -161,7 +164,7 @@ const Pricing = () => {
                 <p className='text-white  text-base leading-7 ml-3 '>Unlimited users</p>
               </li>
             </ul>
-            <Link to="/contact" className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#FCD980 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#282938 aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
+            <Link to="/contact" onClick={handleButtonClick} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#FCD980 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#282938 aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
           </li>
           <li className='w-full max-w-[406px] mx-auto tabletmax:mx-0 py-10 aaa:py-[64px] px-6 aaa:px-12  bg-#F4F6FC rounded-xl'>
             <div className='aaa:flex block items-center mb-5'>
@@ -245,7 +248,7 @@ const Pricing = () => {
                 <p className='text-#282938  text-base leading-7 ml-3 '>Assist and Help</p>
               </li>
             </ul>
-            <Link to="/contact" className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-white aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
+            <Link to="/contact" onClick={handleButtonClick} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-white aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
           </li>
         </ul>
       </div>
