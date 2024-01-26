@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const Cta = () => {
+    const handleButtonClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     return (
         <section className='pt-[104px] bg-#1C1E53 z-0'>
             <div className='containerb tabletmax:flex space-x-0  tabletmax:space-x-[142px]'>
                 <div>
-                    <Link to="/" className='mb-6 mx-auto w-full max-w-[160px] block'>
+                    <Link onClick={handleButtonClick} to="/" className='mb-6 mx-auto w-full max-w-[160px] block'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="160" height="33" viewBox="0 0 160 33" fill="none">
                             <g >
                                 <path d="M159.716 24.7494V28.7089H156.395C152.85 28.5975 150.957 26.6836 150.957 23.0887V14.0456H148.638V10.5722H150.957V6.68359H155.858V10.5317H159.605V13.995H155.858V22.6026C155.858 23.7671 156.091 24.6988 157.883 24.6988L159.716 24.7494Z" fill="white" />

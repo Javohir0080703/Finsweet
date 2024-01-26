@@ -21,6 +21,9 @@ module.exports = withMT ({
       backgroundImage: {
         'home-cta': "url('./img/homebg.png')",
       },
+      backgroundColor: {
+        'accardionbg': '#1C1E5380', // Replace with your desired color
+      },
       screens: {
         'tabletmax': '1100px',
         'ddd':'460px',

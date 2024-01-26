@@ -14,6 +14,8 @@ const ContactForm = () => {
   const [messageSend, setMessageSend] = useState('');
   const [contextSend, setcontextSend] = useState('');
   const [SubjectSend, setSubjectSend] = useState('');
+  const [subject, setSubject] = useState(false)
+  // const [subjecttwo, setSubjectTwo] = useState()
   //   email
   const handleChange = (event) => {
     setEmail(event.target.value);
@@ -21,37 +23,44 @@ const ContactForm = () => {
 
   const handleSubmitInput = (event) => {
     event.preventDefault();
+    // setNameSend('');
+    // setEmailSend('');
+    // setMessageSend('');
+    // setcontextSend('');
+    // setSubjectSend('')
+    if (contextSend == "" || SubjectSend == "" || nameSend == "" || emailSend == "") {
+      setSubject(true)
+    } else {
+      setSubject(false)
+      const telegram_bot_id = '6449286041:AAHA1VJlhGPS3QKrpeGowx9wGPjhgJ6W53Q';
+      const chat_id = '5659934636';
 
+      const telegramMessage = `Ismi: ${nameSend}\nEmail: ${emailSend}\nProvide context: ${contextSend}\nSelect Subject: ${SubjectSend}\nMessage: ${messageSend}`;
+
+      axios
+
+
+        .post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
+          chat_id,
+          text: telegramMessage,
+        })
+        .then((response) => {
+          setInputValue('');
+          setEmail('');
+          setMessageSend('');
+          setcontextSend('');
+          setSubjectSend('')
+
+        })
+
+    }
     if (!validateEmail(email)) {
       setError('Hatolik! Malumot email formatida emas');
       return;
     }
-    event.preventDefault();
-
-    const telegram_bot_id = '6449286041:AAHA1VJlhGPS3QKrpeGowx9wGPjhgJ6W53Q';
-    const chat_id = '5659934636';
-
-    const telegramMessage = `Ismi: ${nameSend}\nEmail: ${emailSend}\nProvide context: ${contextSend}\nSelect Subject: ${SubjectSend}\nMessage: ${messageSend}`;
-
-    axios
-      .post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
-        chat_id,
-        text: telegramMessage,
-      })
-      .then((response) => {
-        // console.log(response.data);
-        setNameSend('');
-        setEmailSend('');
-        setMessageSend('');
-        setcontextSend('');
-        setSubjectSend('')
-
-      })
-    // .catch((error) => {
-    //   console.error(error);
-    // });
-    // Emailni yuborish yoki qo'shimcha ishlaringizni bajarish
+    // event.preventDefault();
   };
+
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -69,6 +78,7 @@ const ContactForm = () => {
       setErrorName('');
     }
   };
+
   const handleSubmitName = (event) => {
     event.preventDefault();
 
@@ -76,9 +86,9 @@ const ContactForm = () => {
       setError('Hatolik! Malumot 40 ta harfdan oshib ketdi');
       return;
     }
-
     // Malumotni yuborish yoki qo'shimcha ishlarni bajarish
   };
+
 
   // input
 
@@ -89,25 +99,28 @@ const ContactForm = () => {
         <p className='text-center text-#282938 text-base leading-7 mb-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore.</p>
         <div className='px-[77px] pt-[55px] pb-[70px] w-full max-w-[1061px] bg-#F4F6FC rounded-xl mx-auto'>
           <form onSubmit={handleSubmitInput} className='grid grid-cols-2 gap-x-8 gap-y-6'>
-            <div  onChange={handleChangeName}>
+            <div onChange={handleChangeName}>
               <label className='text-black text-lg font-medium leading-8 mb-1.5 block'>Name</label>
-              <input onChange={(e) => setNameSend(e.target.value)} value={inputValue} type="text" className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Enter your name' />
-              {errorName && <div>{errorName}</div>}
+              <input max={10} onChange={(e) => setNameSend(e.target.value)} value={inputValue} type="text" className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Enter your name' />
+              {subject && inputValue.trim() === '' && <p>Iltimos, ma'lumotni kiriting.</p>}
             </div>
             <div onChange={handleChange}>
               <label className='text-black text-lg font-medium leading-8 mb-1.5 block'>Email</label>
-              <input onChange={(e) => setEmailSend(e.target.value)} type="email" value={email}  className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Enter your Emial' />
-              {error && <div>{error}</div>}
+              <input onChange={(e) => setEmailSend(e.target.value)} type="email" value={email} className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Enter your Emial' />
+              {subject && email.trim() === '' && <p>Iltimos, ma'lumotni kiriting.</p>} 
             </div>
             <div>
               <label className='text-black text-lg font-medium leading-8 mb-1.5 block'>Subject</label>
-              <input onChange={(e) => setcontextSend(e.target.value)} type="text" className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Provide context' />
+              <input onChange={(e) => setcontextSend(e.target.value)} type="text" value={contextSend} className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Provide context' />
+              {subject && contextSend.trim() === '' && <p>Iltimos, ma'lumotni kiriting.</p>}
+           
             </div>
             <div>
               <label className='text-black text-lg font-medium leading-8 mb-1.5 block'>Subject</label>
-              <input onChange={(e) => setSubjectSend(e.target.value)} type="text" className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Select Subject' />
+              <input onChange={(e) => setSubjectSend(e.target.value)} type="text" value={SubjectSend} className='py-[18px] pl-8 w-full max-w-[438px] border-[#000]/[0.12] border rounded-lg bg-transparent' placeholder='Select Subject' />
+              {subject && SubjectSend.trim() === '' && <p>Iltimos, ma'lumotni kiriting.</p>}
             </div>
-            <textarea onChange={(e) => setMessageSend(e.target.value)} placeholder='Write your  question here' className='block col-span-2 pt-[18px] pb-[92px] pl-8 w-full max-w-[908px] border border-[#000]/[0.12] rounded-lg bg-transparent  overflow-hidden text-black text-base leading-7  h-full max-h-[138px] min-h-[138px] '></textarea>
+            <textarea onChange={(e) => setMessageSend(e.target.value)} value={messageSend} placeholder='Write your  question here' className='block col-span-2 pt-[18px] pb-[92px] pl-8 w-full max-w-[908px] border border-[#000]/[0.12] rounded-lg bg-transparent  overflow-hidden text-black text-base leading-7  h-full max-h-[138px] min-h-[138px] '></textarea>
             <button type='submit' className='px-[51px] py-[15px] bg-#282938 w-full max-w-[254px] rounded-[41px] text-#F4F6FC text-lg font-semibold leading-8' >Yuborish</button>
           </form>
         </div>

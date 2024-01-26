@@ -9,36 +9,39 @@ const HomeAccordion = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-
+  // const [erorr, setError] = useState(false)
   // window
-  // const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const handleButtonClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   // input
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name === "" || email === "" || message === "") {
+      alert("Iltimos malumotni to'ldiring")
+    } else {
 
-    const telegram_bot_id = '6449286041:AAHA1VJlhGPS3QKrpeGowx9wGPjhgJ6W53Q';
-    const chat_id = '5659934636';
+      const telegram_bot_id = '6449286041:AAHA1VJlhGPS3QKrpeGowx9wGPjhgJ6W53Q';
+      const chat_id = '5659934636';
 
-    const telegramMessage = `Ismi: ${name}\nEmail: ${email}\nFigma design URL: ${message}`;
+      const telegramMessage = `Ismi: ${name}\nEmail: ${email}\nFigma design URL: ${message}`;
 
-    axios
-      .post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
-        chat_id,
-        text: telegramMessage,
-      })
-      .then((response) => {
-        console.log(response.data);
-        setName('');
-        setEmail('');
-        setMessage('');
-      })
+      axios
+        .post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
+          chat_id,
+          text: telegramMessage,
+        })
+        .then((response) => {
+          console.log(response.data);
+          setName('');
+          setEmail('');
+          setMessage('');
+        })
       // .catch((error) => {
       //   console.error(error);
       // });
-  };
+    };
+  }
 
 
   return (
@@ -51,23 +54,30 @@ const HomeAccordion = () => {
             <p className='text-#1C1E53 text-base font-medium leading-7 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua ut enim.</p>
           </div>
           <div className='flex   items-center mb-[128px]'>
-            <div className='bg-home-cta w-full max-w-[624px]   bg-whidth h-full min-h-[691px] pt-[96px] px-[96px] hidden sss:block '>
-              <h2 className='text-#1C1E53 text-[54px] font-semibold leading-[74px] mb-6'>
+            <div className='z-10  relative bg-home-input w-full max-w-[624px]   bg-whidth h-full min-h-[651px] pt-[96px] px-[96px] hidden sss:block '>
+              <div className='absolute z-[-10] bg-home-input-blur  w-full max-w-[624px]   bg-whidth h-full min-h-[651px] pt-[96px] px-[96px] hidden sss:block top-0 left-0 '>
+
+              </div>
+              <h2 className='text-white text-[54px] z-50 font-semibold leading-[74px] mb-6'>
                 Building stellar websites for early startups
               </h2>
-              <p className='text-#1C1E53 text-base font-medium leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+              <p className='z-50 text-white text-base font-medium leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
             </div>
-            <div className='w-full max-w-[624px] mx-auto sss:mx-0 bg-#1C1E53/[0.8] h-full min-h-[653px]  ddd:py-[50px] ddd:px-[50px] eee:pb-0 px-[25px] py-[25px] eee:pt-[96px] eee:px-[96px]'>
-              <h2 className='text-white text-[32px] font-medium leading-[48px] mb-4'>Send inquiry</h2>
-              <p className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <div className='z-50 w-full max-w-[624px] mx-auto sss:mx-0 bg-#1C1E53/[0.8] h-full min-h-[653px]  ddd:py-[50px] ddd:px-[50px] eee:pb-0 px-[25px] py-[25px] eee:pt-[96px] eee:px-[96px]'>
+              <h2 className='z-50 text-white text-[32px] font-medium leading-[48px] mb-4'>Send inquiry</h2>
+              <p className='z-50 text-#F4F6FC text-base font-medium leading-7 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 
               <form onSubmit={handleSubmit} className='space-y-4 mb-7'>
                 <input value={name}
                   onChange={(e) => setName(e.target.value)} className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="text" placeholder='Your Name' />
+                {/* {erorr && <div className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Malumot mavjud emas</div>} */}
                 <input value={email}
                   onChange={(e) => setEmail(e.target.value)} className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="email" placeholder='Email' />
+                {/* {erorr && <div className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Malumot mavjud emas</div>} */}
+
                 <input value={message}
                   onChange={(e) => setMessage(e.target.value)} className='pl-8 py-[18px] w-full mb-10 max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="url" placeholder='Paste your Figma design URL' />
+                {/* {erorr && <div className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Malumot mavjud emas</div>} */}
 
                 <button type="submit" className='py-4 mt-10 aaa:px-[51px] px-5  w-full max-w-[200px] aaa:max-w-[432px] block bg-#FCD980 rounded-[41px] text-#1B1C2B text-sm aaa:text-lg font-semibold leading-8'>Send an Inquiry</button>
               </form>
