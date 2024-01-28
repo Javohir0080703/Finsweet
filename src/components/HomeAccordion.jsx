@@ -63,7 +63,7 @@ const HomeAccordion = () => {
               </h2>
               <p className='z-50 text-white text-base font-medium leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
             </div>
-            <div className='z-50 w-full max-w-[624px] mx-auto sss:mx-0 bg-#1C1E53/[0.8] h-full min-h-[653px]  ddd:py-[50px] ddd:px-[50px] eee:pb-0 px-[25px] py-[25px] eee:pt-[96px] eee:px-[96px]'>
+            <div className=' w-full max-w-[624px] mx-auto sss:mx-0 bg-#1C1E53 h-full min-h-[651px]  ddd:py-[50px] ddd:px-[50px] eee:pb-0 px-[25px] py-[25px] eee:pt-[96px] eee:px-[96px]'>
               <h2 className='z-50 text-white text-[32px] font-medium leading-[48px] mb-4'>Send inquiry</h2>
               <p className='z-50 text-#F4F6FC text-base font-medium leading-7 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 
@@ -106,7 +106,7 @@ const HomeAccordion = () => {
                     <p className='text-#282938 text-base font-medium leading-7 opacity-[0.7] mb-4'>{blog.data}</p>
                     <p className='text-#282938 text-2xl font-medium leading-9 mb-4'>{blog.text}</p>
                     <p className='text-#282938 text-base leading-7 mb-8'>{blog.p}</p>
-                    <Link to="/Blog" onClick={handleButtonClick} className='text-#282938 text-base font-medium leading-7 flex items-center'>
+                    <Link to={`/our_blog/${blog.id}`} onClick={handleButtonClick} className='text-#282938 text-base font-medium leading-7 flex items-center'>
                       Read More
                       <svg className='ml-3' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">
                         <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#282938" />

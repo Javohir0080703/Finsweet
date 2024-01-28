@@ -10,6 +10,8 @@ const Pricing = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+
+
   return (
     <section className='py-[128px] bg-white z-0'>
       <div className='containerb'>
@@ -92,7 +94,7 @@ const Pricing = () => {
                 <p className='text-#282938 text-base leading-7 ml-3 '>Unlimited users</p>
               </li>
             </ul>
-            <Link to="/contact" onClick={handleButtonClick} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#F4F6FC aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
+            <Link  onClick={handleTab} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#F4F6FC aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
           </li>
           <li className='w-full max-w-[406px] mx-auto tabletmax:mx-0 py-10 aaa:py-[64px] px-6 aaa:px-12  bg-#1C1E53 rounded-xl'>
             <div className='aaa:flex block items-center mb-5'>
@@ -164,7 +166,7 @@ const Pricing = () => {
                 <p className='text-white  text-base leading-7 ml-3 '>Unlimited users</p>
               </li>
             </ul>
-            <Link to="/contact" onClick={handleButtonClick} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#FCD980 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#282938 aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
+            <Link onClick={handleTab} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#FCD980 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-#282938 aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
           </li>
           <li className='w-full max-w-[406px] mx-auto tabletmax:mx-0 py-10 aaa:py-[64px] px-6 aaa:px-12  bg-#F4F6FC rounded-xl'>
             <div className='aaa:flex block items-center mb-5'>
@@ -248,7 +250,7 @@ const Pricing = () => {
                 <p className='text-#282938  text-base leading-7 ml-3 '>Assist and Help</p>
               </li>
             </ul>
-            <Link to="/contact" onClick={handleButtonClick} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-white aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
+            <Link onClick={handleTab} className='aaa:py-4 py-2 aaa:px-[51px] px-5 bg-#282938 w-full max-w-[150px] aaa:max-w-[254px] block mx-auto text-center rounded-[41px] text-white aaa:text-lg text-sm font-semibold leading-8'>Get started</Link>
           </li>
         </ul>
       </div>

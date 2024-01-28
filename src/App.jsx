@@ -10,6 +10,7 @@ import FaqDetail from './pages/FaqDetail'
 import Blog from './pages/BlogAbout'
 import BlogDetail from './pages/BlogDetail'
 import Contact from './pages/Contact'
+import OurBlogDetail from './pages/OurBlogDetail'
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/faq" element={<Faq/>} />
         <Route path="/users/:id" element={<FaqDetail/>} />
         <Route path="/about/:id" element={<BlogDetail/>} />
+        <Route path="/our_blog/:id" element={<OurBlogDetail/>} />
         <Route path="/Blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
       </Route>
