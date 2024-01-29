@@ -52,13 +52,13 @@ const ContactForm = () => {
           setSubjectSend('')
 
         })
+        alert("Malumot yuborildi")
 
     }
     if (!validateEmail(email)) {
       setError('Hatolik! Malumot email formatida emas');
       return;
     }
-    // event.preventDefault();
   };
 
 

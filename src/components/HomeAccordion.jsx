@@ -20,7 +20,7 @@ const HomeAccordion = () => {
     if (name === "" || email === "" || message === "") {
       alert("Iltimos malumotni to'ldiring")
     } else {
-
+       alert("Malumot yuborildi")
       const telegram_bot_id = '6449286041:AAHA1VJlhGPS3QKrpeGowx9wGPjhgJ6W53Q';
       const chat_id = '5659934636';
 

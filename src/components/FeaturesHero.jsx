@@ -1,6 +1,5 @@
 import React from 'react'
-import Illustration from '../img/Illustration.svg'
-import heroImg from '../img/Feature-hero.svg'
+import heroImg from '../img/Feature-Hero.svg'
 import { Link } from 'react-router-dom'
 const HomeHero = () => {
     const handleButtonClick = () => {
