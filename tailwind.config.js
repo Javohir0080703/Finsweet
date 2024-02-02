@@ -33,7 +33,8 @@ module.exports = withMT ({
         'www':'800px',
         'eee':'540px',
         '640px':'640px',
-        '850px':'850px'
+        '850px':'850px',
+        '270px':'270px'
       },
       
     }

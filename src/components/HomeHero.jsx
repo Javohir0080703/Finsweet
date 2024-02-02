@@ -9,18 +9,18 @@ const HomeHero = () => {
         <section className='py-[128px] bg-#1C1E53 z-0'>
             <div className='containerb block qqq:flex items-center justify-between'>
                 <div>
-                    <h2 className='sss:text-[54px] text-center qqq:text-left text-[40px] font-semibold leading-[55px] sss:leading-[74px] text-white mb-6'>
+                    <h2 className='sss:text-[54px] text-center qqq:text-left text-[25px] aaa:text-[40px] font-semibold leading-7 aaa:leading-[55px] sss:leading-[74px] text-white mb-6'>
                         Building stellar websites <br className='hidden qqq:block' /> for early    startups
                     </h2>
-                    <p className='text-white text-base leading-7 mb-12  text-center qqq:text-left'>
+                    <p className='text-white text-sm aaa:text-base leading-5 aaa:leading-7 mb-12  text-center qqq:text-left'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br className='block qqq:hidden' /> sed do <br className='hidden sss:block' /> eiusmod tempor incididunt.
                     </p>
 
                     <div className='sss:flex block space-y-5 sss:space-y-0 items-center'>
-                        <Link to="/faq" onClick={handleButtonClick} className=' w-full max-w-[189px] qqq:max-w-[240px]  qqq:mx-0 mx-auto  block  text-#1B1C2B text-lg font-semibold leading-8 bg-#FCD980 py-4 px-[30px] sss:px-[56px] rounded-[41px]'>
+                        <Link to="/faq" onClick={handleButtonClick} className=' w-full max-w-[189px] qqq:max-w-[240px]  qqq:mx-0 mx-auto  block  text-#1B1C2B text-sm aaa:text-lg font-semibold leading-8 bg-#FCD980 py-3 text-center  aaa:py-4 px-4 aaa:px-[30px] sss:px-[56px] rounded-[41px]'>
                             View our work
                         </Link>
-                        <Link to="/pricing" onClick={handleButtonClick} className='text-white   text-lg font-semibold leading-8 w-full max-w-[169px] mx-auto flex items-center  qqq:ml-10 '>
+                        <Link to="/pricing" onClick={handleButtonClick} className='text-white   text-lg font-semibold leading-8 w-full max-w-[201px] aaa:max-w-[265px] mx-auto flex items-center  qqq:ml-10 py-2 aaa:py-4 px-6 aaa:px-[30px] sss:px-[56px]  rounded-[41px]'>
                         View Pricing
 
                             <svg className='ml-4' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">

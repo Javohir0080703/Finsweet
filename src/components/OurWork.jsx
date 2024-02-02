@@ -58,10 +58,10 @@ const OurWork = () => {
                         />
 
                         {showMessage &&
-                            <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} className=' w-full pt-[312px] pl-12 pr-[35px] absolute top-0 max-w-[396px] h-full min-h-[600px] bg-lanier'>
-                                <h3 className='text-white text-2xl font-semibold leading-9 mb-4'>Workhub office Webflow Webflow Design</h3>
-                                <p className='text-white text-base font-medium leading-7 mb-10'>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam </p>
-                                <Link onClick={handleButtonClick} to="/faq" className='text-[#FCD980] text-base font-medium leading-7 flex items-center'>
+                            <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} className=' hidden  w-full ddd:pb-14 pb-3 aaa:pb-8 270px:flex flex-col justify-end pl-6 ddd:pl-12 pr-[35px] absolute top-0 max-w-[396px] h-full max-h-[600px] bg-lanier'>
+                                <h3 className='text-white text-xs aaa:text-base ddd:text-2xl font-medium ddd:font-semibold leading-5 ddd:leading-9 mb-0.5 aaa:mb-2 ddd:mb-4'>Workhub office Webflow Webflow Design</h3>
+                                <p className='text-white text-xs ddd:text-base font-medium leading-5 ddd:leading-7 mb-1.5 aaa:mb-4 ddd:mb-10'>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam </p>
+                                <Link onClick={handleButtonClick} to="/faq" className='text-[#FCD980] text-xs aaa:text-base font-medium leading-7 flex items-center'>
                                     View project
                                     <svg className='ml-4' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">
                                         <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#FCD980" />
@@ -80,8 +80,8 @@ const OurWork = () => {
                             />
 
                             {showMessagetwo &&
-                                <div onMouseOver={handleMouseOvertwo} onMouseLeave={handleMouseLeavetwo} className=' w-full pt-[129px] pl-[56px]  pr-9 absolute top-0 left-0 max-w-[405px] h-full min-h-[284px] bg-lanier'>
-                                    <h3 className='text-white text-2xl font-semibold leading-9 mb-4'>Unisaas Website <br /> Design</h3>
+                                <div onMouseOver={handleMouseOvertwo} onMouseLeave={handleMouseLeavetwo} className=' w-full flex flex-col justify-end pb-4 tabletmax:pb-7 pl-8   tabletmax:pl-[56px]  pr-9 absolute top-0 left-0 max-w-[405px] h-full max-h-[284px] bg-lanier'>
+                                    <h3 className='text-white text-lg tabletmax:text-2xl font-semibold tabletmax:leading-9 mb-4'>Unisaas Website <br /> Design</h3>
                                     <Link onClick={handleButtonClick} to="/faq" className='text-[#FCD980] text-base font-medium leading-7 flex items-center'>
                                         View portfolio
                                         <svg className='ml-4' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">

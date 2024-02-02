@@ -74,8 +74,8 @@ const Header = () => {
           </Link>
         </div>
 
-        <button onClick={handleopen} className='qqq:hidden block py-3 px-3 border-2 rounded-[50%]'>
-          <svg className='space-y-1' xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 16 16" fill="none">
+        <button onClick={handleopen} className='qqq:hidden  block py-3 px-3 border-[3px] rounded-[50%]'>
+          <svg className='space-y-1 h-5 w-5 mx-auto my-auto' xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 14 14" fill="none">
             <path d="M1 8H25" stroke="#fff"  />
             <path d="M1 12H25" stroke="#fff" />
             <path d="M1 4H25" stroke="#fff"  />
@@ -83,7 +83,7 @@ const Header = () => {
         </button>
       </div>
      { closeModal && (
-       <div className='qqq:hidden block px-5 pt-[41px] h-full w-full z-50 top-0 left-0 min-w-[100vw] fixed bg-#1C1E53 min-h-[100vh]'>
+       <div className='qqq:hidden block px-5 pt-[34px] h-full w-full z-50 top-0 left-0 min-w-[100vw] fixed bg-#1C1E53 min-h-[100vh]'>
        <div className='flex items-center justify-between mb-10'>
          <Link to="/">
            <svg xmlns="http://www.w3.org/2000/svg" width="122" height="25" viewBox="0 0 122 25" fill="none">
@@ -114,39 +114,39 @@ const Header = () => {
        <div className=''>
          <nav className=' mb-10'>
            <ul className='space-y-4'>
-             <li className='text-center'>
+             <li onClick={handleClose} className={`${closeModal ? "text-animation" : "" } text-center`}>
                <Link className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                  Home
                </Link>
              </li>
-             <li className='text-center'>
+             <li onClick={handleClose} className={`${closeModal ? "text-animation" : "" } text-center`}>
                <Link to="/about" className='text-xl whitespace-nowrap font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                  About us
                </Link>
              </li>
-             <li className='text-center'>
+             <li onClick={handleClose}  className={`${closeModal ? "text-animation" : "" } text-center`}>
                <Link to="/features" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                  Features
                </Link>
              </li>
-             <li className='text-center'>
+             <li onClick={handleClose}  className={`${closeModal ? "text-animation" : "" } text-center`}>
                <Link to="/pricing" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                  Pricing
                </Link>
              </li>
-             <li className='text-center'>
+             <li onClick={handleClose}  className={`${closeModal ? "text-animation" : "" } text-center`}>
                <Link to="/faq" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                  FAQ
                </Link>
              </li>
-             <li className='text-center'>
+             <li onClick={handleClose} className={`${closeModal ? "text-animation" : "" } text-center`}>
                <Link to="/Blog" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                  Blog
                </Link>
              </li>
            </ul>
          </nav>
-         <button className='text-white text-base font-medium leading-7 mx-auto w-full max-w-[188px] block px-12 py-4  bg-transparent border-2 border-white/[0.2] rounded-[41px]'>
+         <button onClick={handleClose} className={`${ closeModal ? "text-animation" : ""}  text-white text-base font-medium leading-7 mx-auto w-full max-w-[188px] block px-12 py-4  bg-transparent border-2 border-white/[0.2] rounded-[41px]`}>
            Contact us
          </button>
        </div>

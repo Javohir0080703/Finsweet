@@ -28,7 +28,7 @@ const Cta = () => {
                             </defs>
                         </svg>
                     </Link>
-                    <p className='text-white w-full max-w-[400px] text-base font-medium leading-7 mb-[86px] text-center tabletmax:text-left mx-auto'>We are always open to discuss your project and improve your online presence.</p>
+                    <p className='text-white w-full  max-w-[400px] text-base font-medium leading-7 mb-[86px] text-center  mx-auto'>We are always open to discuss your project and improve your online presence.</p>
                     <div className='pt-[18px] eee:flex block  ddd:pl-[37px] pl-3 bg-#FCD980 w-full max-w-[250px] ddd:max-w-[517px] mx-auto pb-4 '>
                         <div className='eee:mb-0 mb-5'>
                             <p className='text-#282938 ddd:text-lg text-sm font-medium leading-8 ddd:mr-[102px]'>Email me at</p>
@@ -42,7 +42,7 @@ const Cta = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className='text-white text-5xl font-semibold leading-[64px] mb-3.5 text-center tabletmax:text-left mt-5 tabletmax:mt-0'>
+                    <h3 className='text-white text-5xl font-semibold leading-[64px] mb-3.5 text-center tabletmax:text-center mt-5 tabletmax:mt-0'>
                         Lets Talk!
                     </h3>
                     <p className='text-#F4F6FC w-full mx-auto text-center max-w-[400px] text-base leading-7 mb-7'>We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
