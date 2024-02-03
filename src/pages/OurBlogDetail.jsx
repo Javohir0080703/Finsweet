@@ -9,10 +9,10 @@ const OurBlogDetail = () => {
    <Fragment>
     <section className='py-[128px]'>
         <div className='containerb'>
-             <h1 className='text-[70px] font-semibold  text-center  leading-[85px]  mb-8'>{blog.text}</h1>
+             <h1 className='tabletmax:text-[70px] text-base  aaa:text-xl eee:text-3xl 640px:text-4xl www:text-[60px] font-semibold  text-center leading-5 aaa:leading-7 640px:leading-[45px] www:leading-[70px] tabletmax:leading-[85px]  mb-8'>{blog.text}</h1>
              <p className='text-center text-2xl font-medium mb-8'>{blog.data}</p>
              <img className='w-full max-w-[780px] mx-auto mb-8' src={blog.img} alt="blog_img" />
-             <p className='text-3xl font-medium text-center w-full max-w-[900px] mx-auto leading-[40px]'>{blog.p}</p>
+             <p className='eee:text-3xl text-xs aaa:text-xl font-medium text-center w-full max-w-[900px] mx-auto leading-5 aaa:leading-8 eee:leading-[40px]'>{blog.p}</p>
         </div>
     </section>
    </Fragment>

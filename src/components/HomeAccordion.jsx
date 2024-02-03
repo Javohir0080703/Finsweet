@@ -50,15 +50,15 @@ const HomeAccordion = () => {
 
         <div className=' bg-white/[0.05]'>
           <div className='mb-10 block sss:hidden'>
-            <h2 className='text-#1C1E53 mb-6 text-[54px] font-semibold leading-[74px] text-center'>Building stellar <br /> websites for <br /> early startups</h2>
-            <p className='text-#1C1E53 text-base font-medium leading-7 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua ut enim.</p>
+            <h2 className='text-#1C1E53 text-2xl mb-6 aaa:text-[40px] eee:text-[54px] font-semibold leading-7 aaa:leading-[50px] eee:leading-[74px] text-center'>Building stellar <br className='hidden eee:block' /> websites for <br  className='hidden eee:block' /> early startups</h2>
+            <p className='text-#1C1E53 text-xs aaa:text-base font-medium leading-5 aaa:leading-7 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br  className='hidden eee:block' /> sed do eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua ut enim.</p>
           </div>
           <div className='flex   items-center mb-[128px]'>
             <div className='z-10  relative bg-home-input w-full max-w-[624px]   bg-whidth h-full min-h-[651px] pt-[96px] px-[96px] hidden sss:block '>
               <div className='absolute z-[-10] bg-home-input-blur  w-full max-w-[624px]   bg-whidth h-full min-h-[651px] pt-[96px] px-[96px] hidden sss:block top-0 left-0 '>
 
               </div>
-              <h2 className='text-white text-[54px] z-50 font-semibold leading-[74px] mb-6'>
+              <h2 className='text-white text-3xl eee:text-[54px] z-50 font-semibold leading-[74px] mb-6'>
                 Building stellar websites for early startups
               </h2>
               <p className='z-50 text-white text-base font-medium leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
