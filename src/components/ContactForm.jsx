@@ -95,8 +95,8 @@ const ContactForm = () => {
   return (
     <section className='py-[128px] bg-white'>
       <div className='containerb'>
-        <h1 className='text-#282938 text-center text-5xl font-semibold leading-[64px] mb-4'>Contact Us</h1>
-        <p className='text-center text-#282938 text-base leading-7 mb-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore.</p>
+        <h1 className='text-#282938 text-center text-3xl ddd:text-5xl font-semibold leading-[64px] mb-4'>Contact Us</h1>
+        <p className='text-center text-#282938 text-xs ddd:text-base leading-5 ddd:leading-7 mb-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore.</p>
         <div className='ddd:px-[77px] px-11 pt-[55px] pb-[70px] w-full max-w-[1061px] bg-#F4F6FC rounded-xl mx-auto'>
           <form onSubmit={handleSubmitInput} className='grid grid-cols-1 640px:grid-cols-2 gap-x-8 gap-y-6'>
             <div onChange={handleChangeName}>

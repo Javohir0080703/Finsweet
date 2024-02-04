@@ -38,10 +38,10 @@ const OurWork = () => {
         <section className='py-[128px] bg-white z-0'>
             <div className='containerb'>
                 <div className='md:flex block items-center justify-between mb-[64px]'>
-                    <h2 className='text-#282938  text-center md:text-left text-5xl leading-[64px] font-semibold'>
+                    <h2 className='text-#282938  text-center md:text-left text-xl aaa:text-3xl  640px:text-5xl leading-10 640px:leading-[64px] font-semibold'>
                         View our projects
                     </h2>
-                    <Link to="/faq" onClick={handleButtonClick} className='flex items-center text-#282938 text-base font-medium leading-7 w-full max-w-[130px] mx-auto md:mx-0'>
+                    <Link to="/faq" onClick={handleButtonClick} className='flex items-center text-#282938 text-sm aaa:text-base font-medium leading-7 w-full max-w-[130px] mx-auto md:mx-0'>
                         View More
                         <svg className='ml-5' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">
                             <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#282938" />
@@ -80,7 +80,7 @@ const OurWork = () => {
                             />
 
                             {showMessagetwo &&
-                                <div onMouseOver={handleMouseOvertwo} onMouseLeave={handleMouseLeavetwo} className=' w-full flex flex-col justify-end pb-4 tabletmax:pb-7 pl-8   tabletmax:pl-[56px]  pr-9 absolute top-0 left-0 max-w-[405px] h-full max-h-[284px] bg-lanier'>
+                                <div onMouseOver={handleMouseOvertwo} onMouseLeave={handleMouseLeavetwo} className='hidden 640px:flex  w-full flex-col justify-end pb-4 tabletmax:pb-7 pl-8   tabletmax:pl-[56px]  pr-9 absolute top-0 left-0 max-w-[405px] h-full max-h-[284px] bg-lanier'>
                                     <h3 className='text-white text-lg tabletmax:text-2xl font-semibold tabletmax:leading-9 mb-4'>Unisaas Website <br /> Design</h3>
                                     <Link onClick={handleButtonClick} to="/faq" className='text-[#FCD980] text-base font-medium leading-7 flex items-center'>
                                         View portfolio
@@ -99,7 +99,7 @@ const OurWork = () => {
                             />
 
                             {showMessagetree &&
-                                <div onMouseOver={handleMouseOvertree} onMouseLeave={handleMouseLeavtree} className=' w-full pt-[129px] pl-[56px]  pr-9 absolute top-0 left-0 max-w-[405px] h-full min-h-[284px] bg-lanier'>
+                                <div onMouseOver={handleMouseOvertree} onMouseLeave={handleMouseLeavtree} className=' w-full pt-[129px] pl-[56px]  pr-9 absolute top-0 left-0 max-w-[405px] h-full min-h-[284px] bg-lanier hidden 640px:block'>
                                     <h3 className='text-white text-2xl font-semibold leading-9 mb-4'>Unisaas Website <br /> Design</h3>
                                     <Link onClick={handleButtonClick} to="/faq" className='text-[#FCD980] text-base font-medium leading-7 flex items-center'>
                                         View portfolio

@@ -15,8 +15,8 @@ const Pricing = () => {
   return (
     <section className='py-[128px] bg-white z-0'>
       <div className='containerb'>
-        <h1 className='text-#282938 text-center text-5xl font-semibold leading-[64px] mb-4'>Our Pricing Plans</h1>
-        <p className='text-center text-#282938 text-base font-medium leading-7 mb-16'>When you’re ready to go beyond prototyping in Figma, Webflow is <br /> ready to help you bring your designs to life — without coding them.</p>
+        <h1 className='text-#282938 text-center text-2xl aaa:text-3xl eee:text-5xl font-semibold leading-10 eee:leading-[64px] mb-4'>Our Pricing Plans</h1>
+        <p className='text-center text-#282938 text-xs aaa:text-base font-medium leading-5 aaa:leading-7 mb-16'>When you’re ready to go beyond prototyping in Figma, Webflow is <br className='hidden eee:block' /> ready to help you bring your designs to life — without coding them.</p>
         <ul className='grid grid-cols-1 tabletmax:grid-cols-3 gap-8'>
           <li className='w-full max-w-[406px] mx-auto tabletmax:mx-0 py-10 aaa:py-[64px] px-6 aaa:px-12  bg-#F4F6FC rounded-xl'>
             <div className='aaa:flex block items-center mb-5'>
@@ -24,8 +24,8 @@ const Pricing = () => {
               <p className='text-#2405F2 text-base0'>Per Design</p>
             </div>
 
-            <p className='text-#282938 text-2xl font-medium leading-9 mb-2'>Landing Page </p>
-            <p className='text-#282938 text-base font-medium leading-7 mb-20'>When you’re ready to go beyond prototyping in Figma,</p>
+            <p className='text-#282938 text-lg aaa:text-2xl font-medium leading-9 mb-2'>Landing Page </p>
+            <p className='text-#282938 text-xs aaa:text-base font-medium leading-5 aaa:leading-7 mb-20'>When you’re ready to go beyond prototyping in Figma,</p>
             <ul className='space-y-5 mb-20'>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
@@ -102,8 +102,8 @@ const Pricing = () => {
               <p className='text-#FCD980 text-base0'>Multi Design</p>
             </div>
 
-            <p className='text-white text-2xl font-medium leading-9 mb-2'>Website Page </p>
-            <p className='text-white text-base font-medium leading-7 mb-[50px]'>When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.</p>
+            <p className='text-white text-lg aaa:text-2xl font-medium leading-5 aaa:leading-9 mb-2'>Website Page </p>
+            <p className='text-white text-xs aaa:text-base font-medium leading-5 aaa:leading-7 mb-[50px]'>When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.</p>
             <ul className='space-y-5 mb-20'>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
@@ -174,8 +174,8 @@ const Pricing = () => {
               <p className='text-#2405F2 text-base0'>Per Design</p>
             </div>
 
-            <p className='text-#282938 text-2xl font-medium leading-9 mb-[10px]'>Complex Project</p>
-            <p className='text-#282938 text-base font-medium leading-7 mb-11'>When you’re ready to go beyond prototyping in Figma, </p>
+            <p className='text-#282938 text-lg aaa:text-2xl font-medium leading-5 aaa:leading-9 mb-[10px]'>Complex Project</p>
+            <p className='text-#282938 text-xs aaa:text-base font-medium leading-5 aaa:leading-7 mb-11'>When you’re ready to go beyond prototyping in Figma, </p>
             <ul className='space-y-5 mb-[65px]'>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">

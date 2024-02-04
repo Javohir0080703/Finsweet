@@ -58,14 +58,14 @@ const HomeAccordion = () => {
               <div className='absolute z-[-10] bg-home-input-blur  w-full max-w-[624px]   bg-whidth h-full min-h-[651px] pt-[96px] px-[96px] hidden sss:block top-0 left-0 '>
 
               </div>
-              <h2 className='text-white text-3xl eee:text-[54px] z-50 font-semibold leading-[74px] mb-6'>
+              <h2 className='text-white text-sm aaa:text-xl ddd:text-3xl   eee:text-[54px] z-50 font-medium ddd:font-semibold leading-10 ddd:leading-[74px] mb-6'>
                 Building stellar websites for early startups
               </h2>
               <p className='z-50 text-white text-base font-medium leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
             </div>
             <div className=' w-full max-w-[624px] mx-auto sss:mx-0 bg-#1C1E53 h-full min-h-[651px]  ddd:py-[50px] ddd:px-[50px] eee:pb-0 px-[25px] py-[25px] eee:pt-[96px] eee:px-[96px]'>
-              <h2 className='z-50 text-white text-[32px] font-medium leading-[48px] mb-4'>Send inquiry</h2>
-              <p className='z-50 text-#F4F6FC text-base font-medium leading-7 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <h2 className='z-50 text-white text-xl ddd:text-[32px] font-medium leading-10 ddd:leading-[48px] mb-4'>Send inquiry</h2>
+              <p className='z-50 text-#F4F6FC text-xs ddd:text-base font-medium leading-5 ddd:leading-7 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 
               <form onSubmit={handleSubmit} className='space-y-4 mb-7'>
                 <input value={name}
@@ -79,10 +79,10 @@ const HomeAccordion = () => {
                   onChange={(e) => setMessage(e.target.value)} className='pl-8 py-[18px] w-full mb-10 max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="url" placeholder='Paste your Figma design URL' />
                 {/* {erorr && <div className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Malumot mavjud emas</div>} */}
 
-                <button type="submit" className='py-4 mt-10 aaa:px-[51px] px-5  w-full max-w-[200px] aaa:max-w-[432px] block bg-#FCD980 rounded-[41px] text-#1B1C2B text-sm aaa:text-lg font-semibold leading-8'>Send an Inquiry</button>
+                <button type="submit" className='py-4 mt-10 aaa:px-[51px] px-5 mx-auto  w-full max-w-[200px] aaa:max-w-[432px] block bg-#FCD980 rounded-[41px] text-#1B1C2B text-sm aaa:text-lg font-semibold leading-8'>Send an Inquiry</button>
               </form>
 
-              <Link to="/contact" onClick={handleButtonClick} className='text-white w-full text-sm aaa:leading-4 aaa:max-w-[244px] max-w-[150px]  mx-auto aaa:text-lg font-medium leading-8 flex items-center'>
+              <Link to="/contact" onClick={handleButtonClick} className='text-white w-full text-xs leading-4 aaa:max-w-[244px] max-w-[164px] font-normal  mx-auto aaa:text-lg aaa:font-medium aaa:leading-8 flex items-center'>
                 Get in touch with us
                 <svg className='ml-5' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">
                   <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="#F4F6FC" />
@@ -93,7 +93,7 @@ const HomeAccordion = () => {
         </div>
 
         <div className=''>
-          <h2 className='text-#282938 text-5xl font-semibold leading-[64px] mb-16'>
+          <h2 className='text-#282938 text-center www:text-left text-3xl ddd:text-5xl font-semibold leading-[64px] mb-16'>
             Our blog
           </h2>
 
@@ -103,9 +103,9 @@ const HomeAccordion = () => {
                 return (
                   <li key={blog.id} className='w-full max-w-[405px] mx-auto www:mx-auto'>
                     <img className='w-full max-w-[405px] mb-10' src={blog.img} alt="img" />
-                    <p className='text-#282938 text-base font-medium leading-7 opacity-[0.7] mb-4'>{blog.data}</p>
-                    <p className='text-#282938 text-2xl font-medium leading-9 mb-4'>{blog.text}</p>
-                    <p className='text-#282938 text-base leading-7 mb-8'>{blog.p}</p>
+                    <p className='text-#282938 text-sm ddd:text-base font-medium leading-7 opacity-[0.7] mb-4'>{blog.data}</p>
+                    <p className='text-#282938 aaa:text-lg text-sm ddd:text-2xl font-medium leading-4 aaa:leading-6 ddd:leading-9 mb-4'>{blog.text}</p>
+                    <p className='text-#282938 aaa:text-sm text-xs ddd:text-base leading-5 ddd:leading-7 mb-8'>{blog.p}</p>
                     <Link to={`/our_blog/${blog.id}`} onClick={handleButtonClick} className='text-#282938 text-base font-medium leading-7 flex items-center'>
                       Read More
                       <svg className='ml-3' xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">

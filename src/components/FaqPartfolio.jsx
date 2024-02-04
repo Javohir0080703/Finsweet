@@ -5,8 +5,8 @@ const FaqPartfolio = () => {
         <section className='py-[96px] bg-#F4F6FC z-0'>
             <div className='containerb'>
                 <p className='text-#282938 text-center text-base font-medium leading-7 mb-1'>What we created</p>
-                <h1 className='text-#282938 text-5xl font-semibold leading-[64px] mb-6 text-center'>Our Work Portfolio</h1>
-                <p className='text-#282938 text-base font-medium leading-7 opacity-[0.7] mb-8 text-center'>We help teams create great digital products by providing them with tools and technology <br /> to make the design-to-code process universally accessible.</p>
+                <h1 className='text-#282938 text-xl aaa:text-3xl eee:text-5xl font-semibold leading-10 eee:leading-[64px] mb-6 text-center'>Our Work Portfolio</h1>
+                <p className='text-#282938 text-xs aaa:text-sm eee:text-base font-medium leading-5 eee:leading-7 opacity-[0.7] mb-8 text-center'>We help teams create great digital products by providing them with tools and technology <br className='hidden 850px:block' /> to make the design-to-code process universally accessible.</p>
                 <ul className='flex items-center space-x-7 w-full max-w-[160px] mx-auto'>
                     <li>
                         <a target='_blank' href="https://ru-ru.facebook.com/login/device-based/regular/login/?login_attempt=1">

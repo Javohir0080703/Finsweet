@@ -46,8 +46,8 @@ const FaqTab = () => {
                     {faqdata.map((faq) => (
                         <li className={`${activeTab === '' || activeTab === faq.theme ? "" : "hidden"} w-full max-w-[623px]`} key={faq.id}>
                             <img className='border-[33px] border-[#98B1C6] mb-6 w-full max-w-[545px]' src={faq.img} alt={faq.title} />
-                            <h3 className='text-#282938 text-[38px] font-semibold leading-[56px] mb-3'>{faq.title}</h3>
-                            <p className='text-#282938 text-base leading-7 mb-6'>{faq.text}</p>
+                            <h3 className='text-#282938 text-xl 270px:text-[38px] font-semibold leading-[56px] mb-3'>{faq.title}</h3>
+                            <p className='text-#282938 text-xs 270px:text-base leading-5 270px:leading-7 mb-6'>{faq.text}</p>
                             <Link onClick={handleButtonClick} to={`/users/${faq.id}`} className='flex items-center text-#282938 text-base font-medium leading-6'>
                                 Read case study
                                 <svg className='ml-3' xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" fill="none">

@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <>
           <BlogHero/>
-          <OurBlog/>
+          {/* <OurBlog/> */}
         </>
     )
 }

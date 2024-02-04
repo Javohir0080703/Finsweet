@@ -5,7 +5,7 @@ const Procces = () => {
   return (
     <section className='pb-[128px] bg-white z-0'>
         <div className='containerb'>
-            <h2 className='text-#282938 text-5xl font-semibold leading-[64px] text-center mb-12'>The process we follow</h2>
+            <h2 className='text-#282938 text-3xl eee:text-5xl font-semibold leading-10 eee:leading-[64px] text-center mb-12'>The process we follow</h2>
             <ul className='grid grid-cols-1 ddd:grid-cols-2 850px:grid-cols-4 gap-[56px]'>
                 {
                     procces.map((e)=>{

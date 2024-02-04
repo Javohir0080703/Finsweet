@@ -15,15 +15,15 @@
     box-sizing: border-box;
 }
 
-.bg-lanier{
+.bg-lanier {
     background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
 }
 
-.bg-home-input{
-     background-image: url(../src/img/homebg.png);
+.bg-home-input {
+    background-image: url(../src/img/homebg.png);
 }
 
-.bg-home-input-blur{
+.bg-home-input-blur {
     background: rgba(28, 30, 83, 0.50);
 }
 
@@ -43,9 +43,10 @@
     background-color: transparent;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     background-color: #4a2eff;
-    opacity: 1 ;
+    opacity: 1;
     color: white;
 }
 
@@ -64,58 +65,73 @@
     --swiper-navigation-size: 25px;
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:900px) {
     .swiper-button-prev {
         left: 330px;
         color: white;
         opacity: 1;
-        
-    
+
+
     }
 
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px) {
     .swiper-button-prev {
         left: 200px;
         color: white;
         opacity: 1;
         top: 180px;
-    
+
     }
 
-    .swiper-button-next{
+    .swiper-button-next {
         top: 180px;
     }
 }
 
-@media only screen and (max-width:556px){
+@media only screen and (max-width:556px) {
     .swiper-button-prev {
         left: 220px;
         color: white;
         opacity: 1;
         top: 250px;
-    
+
     }
 
-    .swiper-button-next{
+    .swiper-button-next {
         top: 250px;
     }
 }
-@media only screen and (max-width:539px){
+
+@media only screen and (max-width:539px) {
     .swiper-button-prev {
         left: 220px;
         color: white;
         opacity: 1;
-        top: 210px;
-    
+        top: 180px;
+
     }
 
-    .swiper-button-next{
-        top: 210px;
+    .swiper-button-next {
+        top: 180px;
     }
 }
-@media only screen and (max-width:370px){
+@media only screen and (max-width:461px) {
+    .swiper-button-prev {
+        left: 220px;
+        color: white;
+        opacity: 1;
+        top: 130px;
+
+    }
+
+    .swiper-button-next {
+        top: 130px;
+    }
+}
+
+@media only screen and (max-width:370px) {
     .swiper-button-prev {
         left: 220px;
         color: white;
@@ -124,22 +140,46 @@
         display: none;
     }
 
-    .swiper-button-next{
+    .swiper-button-next {
         top: 200px;
         display: none;
     }
 }
 
+p {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+h1 {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+h2 {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+h3 {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+h4 {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+span {
+    animation: fade-in 0.5s ease-in-out;
+}
 
 .text-animation {
     animation: fade-in 0.5s ease-in-out;
-  }
+}
 
-  @keyframes fade-in {
+@keyframes fade-in {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
