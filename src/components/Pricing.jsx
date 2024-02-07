@@ -29,11 +29,11 @@ const Pricing = () => {
             <ul className='space-y-5 mb-20'>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -41,11 +41,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -53,11 +53,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -67,12 +67,12 @@ const Pricing = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
                   <g>
                     <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#282938" />
-                    <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" stroke="url(#paint0_linear_174_512)" stroke-width="3" />
+                    <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" stroke="url(#paint0_linear_174_512)" strokeWidth="3" />
                   </g>
                   <defs>
                     <linearGradient id="paint0_linear_174_512" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -82,12 +82,12 @@ const Pricing = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
                   <g >
                     <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#282938" />
-                    <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" stroke="url(#paint0_linear_174_512)" stroke-width="3" />
+                    <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" stroke="url(#paint0_linear_174_512)" strokeWidth="3" />
                   </g>
                   <defs>
                     <linearGradient id="paint0_linear_174_512" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -107,11 +107,11 @@ const Pricing = () => {
             <ul className='space-y-5 mb-20'>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -119,11 +119,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -131,11 +131,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -143,11 +143,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_408)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_408)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_408" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -155,11 +155,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_411)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_411)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_411" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -179,11 +179,11 @@ const Pricing = () => {
             <ul className='space-y-5 mb-[65px]'>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -191,11 +191,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -203,11 +203,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_502)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -215,11 +215,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_408)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_408)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_408" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -227,11 +227,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_411)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_411)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_411" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -239,11 +239,11 @@ const Pricing = () => {
               </li>
               <li className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
-                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_411)" stroke-width="3" />
+                  <path d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z" fill="#97DAAD" stroke="url(#paint0_linear_174_411)" strokeWidth="3" />
                   <defs>
                     <linearGradient id="paint0_linear_174_411" x1="-4.84615" y1="-17" x2="11.6069" y2="11.3225" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                      <stop stopColor="white" />
+                      <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>

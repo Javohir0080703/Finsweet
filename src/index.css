@@ -8,6 +8,16 @@
     }
 }
 
+nav .active{
+ color: white;
+ border-bottom: 3px solid white;
+}
+
+.navactive .active{
+    color: rgb(126, 106, 106);
+    border-bottom: 3px solid rgb(126, 106, 106);
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -34,24 +44,27 @@
     background-size: 100%;
 }
 
-.swiper-button-next {
+/* .swiper-button-next {
     right: 0;
     top: 202px;
     background-color: #4a2eff;
     padding: 25px;
     border-radius: 96px;
     background-color: transparent;
-}
+} */
 
 .swiper-button-next,
 .swiper-button-prev {
+    display: none;
     background-color: #4a2eff;
     opacity: 1;
     color: white;
-}
+} 
 
-.swiper-button-prev {
+/* .swiper-button-prev {
+    position: absolute;
     left: 730px;
+    right: 0 !important;
     top: 202px;
     color: #282938;
     background-color: #4a2eff;
@@ -61,17 +74,50 @@
 
 }
 
-:root {
+/* :root {
     --swiper-navigation-size: 25px;
+} */
+
+/* @media only screen and (min-width:800px) {
+    .swiper-button-prev {
+        left: 740px !important;
+        color: white;
+        opacity: 1;
+        top: 155px;
+
+    }
+    .swiper-button-next {
+        top: 155px;
+    }
+
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:800px) {
+    .swiper-button-prev {
+        left: 640px !important;
+        color: white;
+        opacity: 1;
+        top: 155px;
+
+    }
+    .swiper-button-next {
+        top: 155px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:800px) {
     .swiper-button-prev {
         left: 330px;
         color: white;
         opacity: 1;
+        top: 150px;
 
-
+    }
+    .swiper-button-next {
+        top: 150px;
     }
 
 }
@@ -95,12 +141,12 @@
         left: 220px;
         color: white;
         opacity: 1;
-        top: 250px;
+        top: 200px;
 
     }
 
     .swiper-button-next {
-        top: 250px;
+        top: 200px;
     }
 }
 
@@ -109,14 +155,15 @@
         left: 220px;
         color: white;
         opacity: 1;
-        top: 180px;
+        top: 150px;
 
     }
 
     .swiper-button-next {
-        top: 180px;
+        top: 150px;
     }
 }
+
 @media only screen and (max-width:461px) {
     .swiper-button-prev {
         left: 220px;
@@ -144,7 +191,7 @@
         top: 200px;
         display: none;
     }
-}
+} */
 
 p {
     animation: fade-in 0.5s ease-in-out;
@@ -170,9 +217,17 @@ span {
     animation: fade-in 0.5s ease-in-out;
 }
 
+a {
+    animation: fade-in 0.5s ease-in-out;
+}
+
 .text-animation {
     animation: fade-in 0.5s ease-in-out;
 }
+
+/* ::placeholder{
+    color: white;
+} */
 
 @keyframes fade-in {
     from {

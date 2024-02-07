@@ -11,6 +11,8 @@ import Blog from './pages/BlogAbout'
 import BlogDetail from './pages/BlogDetail'
 import Contact from './pages/Contact'
 import OurBlogDetail from './pages/OurBlogDetail'
+import OurWorkDetail from './pages/OurWorkDetail'
+
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,10 +21,11 @@ const App = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/features" element={<Features/>} />
-        <Route path="/faq" element={<Faq/>} />
+        <Route path="/portfolio" element={<Faq/>} />
         <Route path="/users/:id" element={<FaqDetail/>} />
         <Route path="/about/:id" element={<BlogDetail/>} />
         <Route path="/our_blog/:id" element={<OurBlogDetail/>} />
+        <Route path="/our_work/:id" element={<OurWorkDetail/>} />
         <Route path="/Blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
       </Route>

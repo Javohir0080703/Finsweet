@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 const Header = () => {
   const [closeModal, setCloseModal] = useState(false)
   const handleopen = () => {
@@ -16,7 +16,7 @@ const Header = () => {
     <header className=' py-[34px] bg-#1C1E53 '>
       <div className='containerb flex items-center justify-between '>
 
-        <Link className='block' to="/">
+        <NavLink className='block' to="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="122" height="25" viewBox="0 0 122 25" fill="none">
             <g clipPath="url(#clip0_8371_500)">
               <path d="M121.784 18.8719V21.891H119.252C116.549 21.806 115.105 20.3467 115.105 17.6055V10.7102H113.337V8.06174H115.105V5.09668H118.842V8.03086H121.699V10.6716H118.842V17.2349C118.842 18.1229 119.02 18.8333 120.387 18.8333L121.784 18.8719Z" fill="white" />
@@ -35,46 +35,46 @@ const Header = () => {
               </clipPath>
             </defs>
           </svg>
-        </Link>
+        </NavLink>
 
         <div className='qqq:flex items-center hidden'>
           <nav className='pr-12 '>
             <ul className=' flex space-x-7 items-center'>
               <li>
-                <Link className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
+                <NavLink to="/" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/about" className='text-base whitespace-nowrap font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
+                <NavLink to="/about" className='text-base whitespace-nowrap font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
                   About us
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/features" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
+                <NavLink to="/features" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
                   Features
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/pricing" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
+                <NavLink to="/pricing" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
                   Pricing
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/faq" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
-                  FAQ
-                </Link>
+                <NavLink to="/portfolio" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
+                  Portfolio
+                </NavLink>
               </li>
               <li>
-                <Link to="/Blog" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
+                <NavLink to="/Blog" className='text-base font-medium leading-7 text-#BBBBCB hover:text-white transition-all '>
                   Blog
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>
-          <Link to="/contact" className='text-white text-base font-medium leading-7 w-full max-w-[188px] block px-12 py-4  bg-transparent border-2 border-white/[0.2] rounded-[41px]'>
+          <NavLink to="/contact" className='text-white text-base font-medium leading-7 w-full max-w-[188px] block px-12 py-4  bg-transparent border-2 border-white/[0.2] rounded-[41px]'>
             Contact us
-          </Link>
+          </NavLink>
         </div>
 
         <button onClick={handleopen} className='qqq:hidden  block py-3 px-3 border-[3px] rounded-[50%]'>
@@ -88,9 +88,9 @@ const Header = () => {
       {closeModal && (
         <div className='qqq:hidden block px-5 pt-[34px] h-full w-full z-50 top-0 left-0 min-w-[100vw] fixed bg-#1C1E53 min-h-[100vh]'>
           <div className='flex items-center justify-between mb-10'>
-            <Link to="/">
+            <NavLink to="/">
               <svg xmlns="http://www.w3.org/2000/svg" width="122" height="25" viewBox="0 0 122 25" fill="none">
-                <g clip-path="url(#clip0_8490_500)">
+                <g clipPath="url(#clip0_8490_500)">
                   <path d="M121.784 18.8719V21.891H119.252C116.549 21.806 115.105 20.3467 115.105 17.6055V10.7102H113.337V8.06174H115.105V5.09668H118.842V8.03086H121.699V10.6716H118.842V17.2349C118.842 18.1229 119.02 18.8333 120.387 18.8333L121.784 18.8719Z" fill="white" />
                   <path d="M98.4416 15.0033V14.8026C98.4011 13.9145 98.5364 13.0272 98.8395 12.1914C99.1427 11.3557 99.6078 10.5881 100.208 9.93242C100.809 9.27679 101.532 8.7461 102.338 8.37076C103.144 7.99541 104.016 7.78281 104.904 7.74512C105.082 7.74512 105.267 7.74512 105.445 7.74512C108.974 7.74512 112.07 9.79904 112.07 14.6945V15.7369H102.264C102.364 17.9916 103.584 19.2656 105.638 19.2656C107.406 19.2656 108.232 18.4935 108.472 17.3661H112.001C111.568 20.308 109.221 21.945 105.507 21.945C101.43 21.9141 98.4416 19.3351 98.4416 15.0033ZM108.395 13.3741C108.263 11.3202 107.229 10.3318 105.43 10.3318C103.63 10.3318 102.596 11.4437 102.341 13.3741H108.395Z" fill="white" />
                   <path d="M83.1838 15.0033V14.8026C83.1433 13.9157 83.278 13.0296 83.5802 12.1949C83.8824 11.3601 84.3462 10.5931 84.9449 9.93769C85.5437 9.28226 86.2658 8.75126 87.0699 8.37505C87.874 7.99883 88.7444 7.78478 89.6312 7.74512C89.8088 7.74512 89.9942 7.74512 90.1717 7.74512C93.7005 7.74512 96.8045 9.79904 96.8045 14.6945V15.7369H87.0059C87.1063 17.9916 88.3263 19.2656 90.3802 19.2656C92.1485 19.2656 92.9747 18.4935 93.214 17.3661H96.7428C96.3026 20.308 93.9553 21.945 90.2412 21.945C86.172 21.9141 83.1838 19.3351 83.1838 15.0033ZM93.1368 13.3741C93.0055 11.3202 91.9709 10.3318 90.1717 10.3318C88.3726 10.3318 87.3688 11.4746 87.0831 13.3664L93.1368 13.3741Z" fill="white" />
@@ -107,7 +107,7 @@ const Header = () => {
                   </clipPath>
                 </defs>
               </svg>
-            </Link>
+            </NavLink>
             <button onClick={handleClose}>
               <svg className={`h-12 w-12 transition-transform px-3 py-3 rounded-[50%] border-[3px]`} xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 14 14" fill="none">
                 <path d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z" fill="#fff" />
@@ -118,34 +118,34 @@ const Header = () => {
             <nav className=' mb-10'>
               <ul className='space-y-4'>
                 <li onClick={handleClose} className={`${closeModal ? "text-animation" : ""} text-center`}>
-                  <Link onClick={handleButtonClick} className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
+                  <NavLink onClick={handleButtonClick} to="" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li onClick={handleClose} className={`${closeModal ? "text-animation" : ""} text-center`}>
-                  <Link onClick={handleButtonClick} to="/about" className='text-xl whitespace-nowrap font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
+                  <NavLink onClick={handleButtonClick} to="/about" className='text-xl whitespace-nowrap font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                     About us
-                  </Link>
+                  </NavLink>
                 </li>
                 <li onClick={handleClose} className={`${closeModal ? "text-animation" : ""} text-center`}>
-                  <Link onClick={handleButtonClick} to="/features" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
+                  <NavLink onClick={handleButtonClick} to="/features" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                     Features
-                  </Link>
+                  </NavLink>
                 </li>
                 <li onClick={handleClose} className={`${closeModal ? "text-animation" : ""} text-center`}>
-                  <Link onClick={handleButtonClick} to="/pricing" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
+                  <NavLink onClick={handleButtonClick} to="/pricing" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                     Pricing
-                  </Link>
+                  </NavLink>
                 </li>
                 <li onClick={handleClose} className={`${closeModal ? "text-animation" : ""} text-center`}>
-                  <Link onClick={handleButtonClick} to="/faq" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
-                    FAQ
-                  </Link>
+                  <NavLink onClick={handleButtonClick} to="/portfolio" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
+                    Portfolio
+                  </NavLink>
                 </li>
                 <li onClick={handleClose} className={`${closeModal ? "text-animation" : ""} text-center`}>
-                  <Link onClick={handleButtonClick} to="/Blog" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
+                  <NavLink onClick={handleButtonClick} to="/Blog" className='text-xl font-medium leading-7 text-white hover:text-#BBBBCB transition-all '>
                     Blog
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </nav>

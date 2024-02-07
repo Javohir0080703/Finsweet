@@ -9,6 +9,8 @@ const HomeAccordion = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+  
   // const [erorr, setError] = useState(false)
   // window
   const handleButtonClick = () => {
@@ -41,7 +43,18 @@ const HomeAccordion = () => {
       //   console.error(error);
       // });
     };
+    if (!validateEmail(email)) {
+      setError('Hatolik! Malumot email formatida emas');
+      return;
+    }
   }
+
+
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
 
   return (
@@ -50,7 +63,7 @@ const HomeAccordion = () => {
 
         <div className=' bg-white/[0.05]'>
           <div className='mb-10 block sss:hidden'>
-            <h2 className='text-#1C1E53 text-2xl mb-6 aaa:text-[40px] eee:text-[54px] font-semibold leading-7 aaa:leading-[50px] eee:leading-[74px] text-center'>Building stellar <br className='hidden eee:block' /> websites for <br  className='hidden eee:block' /> early startups</h2>
+            <h2 className='text-#1C1E53 text-2xl mb-6 aaa:text-[40px] eee:text-[54px] font-semibold  aaa:leading-[50px] eee:leading-[74px] text-center '>Building stellar <br className='hidden eee:block' /> websites for <br  className='hidden eee:block' /> early startups</h2>
             <p className='text-#1C1E53 text-xs aaa:text-base font-medium leading-5 aaa:leading-7 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br  className='hidden eee:block' /> sed do eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua ut enim.</p>
           </div>
           <div className='flex   items-center mb-[128px]'>
@@ -58,8 +71,8 @@ const HomeAccordion = () => {
               <div className='absolute z-[-10] bg-home-input-blur  w-full max-w-[624px]   bg-whidth h-full min-h-[651px] pt-[96px] px-[96px] hidden sss:block top-0 left-0 '>
 
               </div>
-              <h2 className='text-white text-sm aaa:text-xl ddd:text-3xl   eee:text-[54px] z-50 font-medium ddd:font-semibold leading-10 ddd:leading-[74px] mb-6'>
-                Building stellar websites for early startups
+              <h2 className='text-white text-sm aaa:text-xl ddd:text-3xl  eee:text-[54px] z-50 font-medium ddd:font-semibold leading-10 ddd:leading-[74px] mb-6'>
+                Building stellar <br /><br />  websites for <br /><br /> early startups
               </h2>
               <p className='z-50 text-white text-base font-medium leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
             </div>
@@ -69,15 +82,12 @@ const HomeAccordion = () => {
 
               <form onSubmit={handleSubmit} className='space-y-4 mb-7'>
                 <input value={name}
-                  onChange={(e) => setName(e.target.value)} className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="text" placeholder='Your Name' />
-                {/* {erorr && <div className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Malumot mavjud emas</div>} */}
+                  onChange={(e) => setName(e.target.value)} className='text-white pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="text" placeholder='Your Name' />
                 <input value={email}
-                  onChange={(e) => setEmail(e.target.value)} className='pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="email" placeholder='Email' />
-                {/* {erorr && <div className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Malumot mavjud emas</div>} */}
-
+                  onChange={(e) => setEmail(e.target.value)} className='text-white pl-8 py-[18px] w-full max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="email" placeholder='Email' />
+                  {error}
                 <input value={message}
-                  onChange={(e) => setMessage(e.target.value)} className='pl-8 py-[18px] w-full mb-10 max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="url" placeholder='Paste your Figma design URL' />
-                {/* {erorr && <div className='text-#F4F6FC text-base font-medium leading-7 mb-10'>Malumot mavjud emas</div>} */}
+                  onChange={(e) => setMessage(e.target.value)} className='text-white pl-8 py-[18px] w-full mb-10 max-w-[432px] rounded-lg border-[2px] border-white/[0.05] bg-transparent' type="url" placeholder='Paste your Figma design URL' />
 
                 <button type="submit" className='py-4 mt-10 aaa:px-[51px] px-5 mx-auto  w-full max-w-[200px] aaa:max-w-[432px] block bg-#FCD980 rounded-[41px] text-#1B1C2B text-sm aaa:text-lg font-semibold leading-8'>Send an Inquiry</button>
               </form>
