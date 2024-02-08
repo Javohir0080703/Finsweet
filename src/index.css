@@ -8,12 +8,12 @@
     }
 }
 
-nav .active{
- color: white;
- border-bottom: 3px solid white;
+nav .active {
+    color: white;
+    border-bottom: 3px solid white;
 }
 
-.navactive .active{
+.navactive .active {
     color: rgb(126, 106, 106);
     border-bottom: 3px solid rgb(126, 106, 106);
 }
@@ -44,179 +44,17 @@ nav .active{
     background-size: 100%;
 }
 
-/* .swiper-button-next {
-    right: 0;
-    top: 202px;
-    background-color: #4a2eff;
-    padding: 25px;
-    border-radius: 96px;
-    background-color: transparent;
-} */
-
 .swiper-button-next,
 .swiper-button-prev {
     display: none;
-    background-color: #4a2eff;
-    opacity: 1;
-    color: white;
-} 
-
-/* .swiper-button-prev {
-    position: absolute;
-    left: 730px;
-    right: 0 !important;
-    top: 202px;
-    color: #282938;
-    background-color: #4a2eff;
-    opacity: 0.6;
-    padding: 25px;
-    border-radius: 96px;
-
 }
 
-/* :root {
-    --swiper-navigation-size: 25px;
-} */
-
-/* @media only screen and (min-width:800px) {
-    .swiper-button-prev {
-        left: 740px !important;
-        color: white;
-        opacity: 1;
-        top: 155px;
-
-    }
-    .swiper-button-next {
-        top: 155px;
-    }
-
-}
-
-@media only screen and (max-width:800px) {
-    .swiper-button-prev {
-        left: 640px !important;
-        color: white;
-        opacity: 1;
-        top: 155px;
-
-    }
-    .swiper-button-next {
-        top: 155px;
-    }
-
-}
-
-
-
-@media only screen and (max-width:800px) {
-    .swiper-button-prev {
-        left: 330px;
-        color: white;
-        opacity: 1;
-        top: 150px;
-
-    }
-    .swiper-button-next {
-        top: 150px;
-    }
-
-}
-
-@media only screen and (max-width:500px) {
-    .swiper-button-prev {
-        left: 200px;
-        color: white;
-        opacity: 1;
-        top: 180px;
-
-    }
-
-    .swiper-button-next {
-        top: 180px;
-    }
-}
-
-@media only screen and (max-width:556px) {
-    .swiper-button-prev {
-        left: 220px;
-        color: white;
-        opacity: 1;
-        top: 200px;
-
-    }
-
-    .swiper-button-next {
-        top: 200px;
-    }
-}
-
-@media only screen and (max-width:539px) {
-    .swiper-button-prev {
-        left: 220px;
-        color: white;
-        opacity: 1;
-        top: 150px;
-
-    }
-
-    .swiper-button-next {
-        top: 150px;
-    }
-}
-
-@media only screen and (max-width:461px) {
-    .swiper-button-prev {
-        left: 220px;
-        color: white;
-        opacity: 1;
-        top: 130px;
-
-    }
-
-    .swiper-button-next {
-        top: 130px;
-    }
-}
-
-@media only screen and (max-width:370px) {
-    .swiper-button-prev {
-        left: 220px;
-        color: white;
-        opacity: 1;
-        top: 200px;
-        display: none;
-    }
-
-    .swiper-button-next {
-        top: 200px;
-        display: none;
-    }
-} */
-
-p {
-    animation: fade-in 0.5s ease-in-out;
-}
-
-h1 {
-    animation: fade-in 0.5s ease-in-out;
-}
-
-h2 {
-    animation: fade-in 0.5s ease-in-out;
-}
-
-h3 {
-    animation: fade-in 0.5s ease-in-out;
-}
-
-h4 {
-    animation: fade-in 0.5s ease-in-out;
-}
-
-span {
-    animation: fade-in 0.5s ease-in-out;
-}
-
+p,
+h1,
+h2,
+h3,
+h4,
+span,
 a {
     animation: fade-in 0.5s ease-in-out;
 }
@@ -224,10 +62,6 @@ a {
 .text-animation {
     animation: fade-in 0.5s ease-in-out;
 }
-
-/* ::placeholder{
-    color: white;
-} */
 
 @keyframes fade-in {
     from {
