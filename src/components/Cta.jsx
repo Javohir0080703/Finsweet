@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 const Cta = () => {
     const handleButtonClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+    }
     return (
-        <section className='pt-[104px] bg-#1C1E53 z-0'>
+        <section className='qqq:pt-[128px] eee:pt-[50px] pt-8 bg-#1C1E53 z-0'>
             <div className='containerb tabletmax:flex space-x-0  tabletmax:space-x-[142px]'>
                 <div>
                     <Link onClick={handleButtonClick} to="/" className='mb-6 mx-auto w-full max-w-[160px] block'>
@@ -28,16 +28,18 @@ const Cta = () => {
                             </defs>
                         </svg>
                     </Link>
-                    <p className='text-white w-full  max-w-[400px] text-base font-medium leading-7 mb-[86px] text-center  mx-auto'>We are always open to discuss your project and improve your online presence.</p>
-                    <div className='pt-[18px] eee:flex block  ddd:pl-[37px] pl-3 bg-#FCD980 w-full max-w-[250px] ddd:max-w-[517px] mx-auto pb-4 '>
-                        <div className='eee:mb-0 mb-5'>
-                            <p className='text-#282938 ddd:text-lg text-sm font-medium leading-8 ddd:mr-[102px]'>Email me at</p>
-                            <p className='text-#282938 text-base leading-7 mr-[29px]'>contact@website.com</p>
-                           
-                        </div>
-                        <div className=''>
-                        <p className='text-#282938 ddd:text-lg text-sm  font-medium leading-8 mr-[102px]'>Call us</p>
-                            <p className='text-#282938 text-base leading-7'>0927 6277 28525</p>
+                    <p className='text-white  text-base font-medium leading-7 mb-[86px] text-center  flex items-center justify-center'>We are always open to discuss your project and <br /> improve your online presence.</p>
+                    <div className='flex justify-center '>
+                        <div className='pt-[18px] eee:flex block  ddd:pl-[37px] pl-3 bg-#FCD980 w-full max-w-[250px] ddd:max-w-[517px]  pb-4 '>
+                            <div className='eee:mb-0 mb-5'>
+                                <p className='text-#282938 ddd:text-lg text-sm font-medium leading-8 ddd:mr-[102px]'>Email me at</p>
+                                <p className='text-#282938 text-base leading-7 mr-[29px]'>contact@website.com</p>
+
+                            </div>
+                            <div className=''>
+                                <p className='text-#282938 ddd:text-lg text-sm  font-medium leading-8 mr-[102px]'>Call us</p>
+                                <p className='text-#282938 text-base leading-7'>0927 6277 28525</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +47,7 @@ const Cta = () => {
                     <h3 className='text-white text-5xl font-semibold leading-[64px] mb-3.5 text-center tabletmax:text-center mt-5 tabletmax:mt-0'>
                         Lets Talk!
                     </h3>
-                    <p className='text-#F4F6FC w-full mx-auto text-center max-w-[400px] text-base leading-7 mb-7'>We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+                    <p className='text-#F4F6FC flex items-center justify-center text-center  text-base leading-7 mb-7'>We are always open to discuss your project, <br /> improve your online presence and help with your <br /> UX/UI design challenges.</p>
 
                     <div className='flex items-center justify-center pb-7 tabletmax:pb-0 space-x-[26px]'>
                         <a href='https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj7rJCM0tWDAxVfGKIDHZMuBM4YABAAGgJsZQ&ase=2&gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wYnjGFwMQwHlhPZ6FGDW18iQimUparW90FyVziaBKdGilgC0xH88oQaAkaqEALw_wcB&ohost=www.google.com&cid=CAESVeD2IFuCAKLh9WZsKyQ0Pc8Ye6EprNpiwSau7l53Fig7tzY124KzF3_qbcupZZtf_x5fBeWC67HEUuknSnAUmrUfayeJacrcHyYmxPDa1JLxbjGIilY&sig=AOD64_2V-ShUdHnZoEoE8o1-xCxIjbBU3A&q&nis=4&adurl&ved=2ahUKEwiZqIqM0tWDAxUXPhAIHQlZC2EQ0Qx6BAgLEAE'>
@@ -53,11 +55,6 @@ const Cta = () => {
                                 <g>
                                     <path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="white" />
                                 </g>
-                                <defs>
-                                    {/* <clipPath id="clip0_8490_389">
-                                        <rect width="16" height="16" fill="white" />
-                                    </clipPath> */}
-                                </defs>
                             </svg>
                         </a>
                         <a href='https://twitter.com/?lang=ru'>

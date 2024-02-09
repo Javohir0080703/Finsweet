@@ -2,7 +2,7 @@ import React from 'react'
 import group from '../img/group.png'
 const AboutHero = () => {
   return (
-    <section className='py-[130px] bg-white z-0'>
+    <section className='qqq:py-[128px] eee:py-[50px] py-8 bg-white z-0'>
         <div className='containerb block tabletmax:flex items-center justify-between'>
            <div>
             <span className='text-#282938 text-lg font-medium leading-8 mb-2 text-center block tabletmax:text-left  '>About us</span>

@@ -58,7 +58,7 @@ const HomeAccordion = () => {
 
 
   return (
-    <section className='pb-[128px] bg-white z-0'>
+    <section className='qqq:pb-[128px] eee:pb-[50px] pb-8 bg-white z-0'>
       <div className='containerb'>
 
         <div className=' bg-white/[0.05]'>

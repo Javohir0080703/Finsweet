@@ -1,14 +1,17 @@
 import React from 'react'
 
 const Partners = () => {
-  return (
-    <section className='py-12 bg-white z-0'>
-        <div className='containerb'>
-        <ul className='grid sss:grid-cols-6 850px:grid-cols-4 640px:grid-cols-3 grid-cols-1 ddd:grid-cols-2  gap-y-5  items-center'>
-                    <li className='w-full max-w-[156px] mx-auto ddd:mx-0'>
-                        <span className='text-#282938 text-[38px] font-semibold leading-[56px] block'>100.000+</span>
-                        <span className='text-#282938 text-base leading-7'>Finsweet Users</span>
-                    </li>
+    return (
+        <section className='md:py-12 py-6 bg-white z-0'>
+            <div className='containerb'>
+              <div className='flex justify-center'>
+              <p className='w-full max-w-[156px] mb-7  '>
+                    <span className='text-#282938 text-[38px] font-semibold leading-[56px] block'>100.000+</span>
+                    <span className='text-#282938 text-base leading-7'>Finsweet Users</span>
+                </p>
+              </div>
+                <ul className='flex flex-wrap  gap-y-5  gap-x-5 items-center'>
+
                     <li className='w-full max-w-[156px]  mx-auto ddd:mx-0' >
                         <svg xmlns="http://www.w3.org/2000/svg" width="162" height="32" viewBox="0 0 162 32" fill="none">
                             <g>
@@ -90,9 +93,9 @@ const Partners = () => {
                         </svg>
                     </li>
                 </ul>
-        </div>
-    </section>
-  )
+            </div>
+        </section>
+    )
 }
 
 export default Partners

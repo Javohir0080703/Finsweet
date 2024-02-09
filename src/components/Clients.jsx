@@ -18,7 +18,7 @@ const Clients = () => {
     };
 
     return (
-        <section className='py-[129px]   bg-#F4F6FC/[0.5] z-0'>
+        <section className='qqq:py-[128px] eee:py-[50px] py-8   bg-#F4F6FC/[0.5] z-0'>
             <div className='containerb block sss:flex justify-between'>
                 <div>
                     <h2 className='text-#282938 text-center sss:text-left text-2xl ddd:text-[38px] font-semibold leading-8 ddd:leading-[56px] mb-4 '>

@@ -93,7 +93,7 @@ const ContactForm = () => {
   // input
 
   return (
-    <section className='py-[128px] bg-white'>
+    <section className='qqq:py-[128px] eee:py-[50px] py-8 bg-white'>
       <div className='containerb'>
         <h1 className='text-#282938 text-center text-3xl ddd:text-5xl font-semibold leading-[64px] mb-4'>Contact Us</h1>
         <p className='text-center text-#282938 text-xs ddd:text-base leading-5 ddd:leading-7 mb-16'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore.</p>

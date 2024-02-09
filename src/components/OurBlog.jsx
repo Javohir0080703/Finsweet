@@ -7,7 +7,7 @@ const OurBlog = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   return (
-    <section className='pb-[128px]'>
+    <section className='qqq:py-[128px] eee:py-[50px] py-8'>
       <div className='containerb'>
         <h2 className='text-#282938 text-5xl font-semibold leading-[64px] mb-12 text-center'>Our Blog</h2>
         <ul className='grid md:grid-cols-2 grid-cols-1 tabletmax:grid-cols-3  gap-x-8 gap-y-16 '>

@@ -4,7 +4,7 @@ import woman from '../img/photowomen.png'
 
 const Inspire = () => {
   return (
-    <section className='py-[128px] bg-#EEF4FA z-0'>
+    <section className='qqq:py-[128px] eee:py-[50px] py-8 bg-#EEF4FA z-0'>
       <div className='containerb'>
         <div className='tabletmax:flex block items-center justify-between'>
           <div>

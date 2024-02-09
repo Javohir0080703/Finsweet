@@ -13,7 +13,7 @@ const Pricing = () => {
 
 
   return (
-    <section className='py-[128px] bg-white z-0'>
+    <section className='qqq:py-[128px] eee:py-[50px] py-8 bg-white z-0'>
       <div className='containerb'>
         <h1 className='text-#282938 text-center text-2xl aaa:text-3xl eee:text-5xl font-semibold leading-10 eee:leading-[64px] mb-4'>Our Pricing Plans</h1>
         <p className='text-center text-#282938 text-xs aaa:text-base font-medium leading-5 aaa:leading-7 mb-16'>When you’re ready to go beyond prototyping in Figma, Webflow is <br className='hidden eee:block' /> ready to help you bring your designs to life — without coding them.</p>

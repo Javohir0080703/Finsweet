@@ -6,7 +6,7 @@ import person from '../img/person-using.png'
 const FeaturesBlog = () => {
   return (
     <section className='z-0 '>
-        <div className='bg-white py-[128px]'>
+        <div className=' qqq:py-[128px] eee:py-[50px] py-8  '>
            <div className='containerb block sss:flex items-center justify-between'>
               <div>
                 <span className='text-black text-lg font-medium leading-8 mb-4 block  text-center sss:text-center'>Use Client-first</span>
@@ -18,7 +18,7 @@ const FeaturesBlog = () => {
               <img className='w-full max-w-[575px] mx-auto sss:mx-0 mb-8 sss:mb-0' src={man} alt="" />
            </div>
         </div>
-        <div className='bg-#F4F6FC py-[128px]'>
+        <div className='bg-#F4F6FC qqq:py-[128px] eee:py-[90px] py-10'>
            <div className='containerb sss:flex block items-center justify-between'>
            <img className='w-full max-w-[575px] mx-auto sss:mx-0'
             src={photo} alt="" />
@@ -31,7 +31,7 @@ const FeaturesBlog = () => {
               </div>
            </div>
         </div>
-        <div className='bg-white py-[128px]'>
+        <div className='bg-white qqq:py-[128px] eee:py-[90px] py-10'>
            <div className='containerb block sss:flex items-center justify-between'>
               <div>
                 <span className='text-black text-lg font-medium leading-8 mb-4 block text-center sss:text-center'>Use Client-first</span>
@@ -43,7 +43,7 @@ const FeaturesBlog = () => {
               <img className='w-full max-w-[575px] mx-auto sss:mx-0' src={aman} alt="man" />
            </div>
         </div>
-        <div className='bg-yellow-700/[0.10] py-[128px]'>
+        <div className='bg-yellow-700/[0.10] qqq:py-[128px] eee:py-[90px] py-10'>
            <div className='containerb block sss:flex items-center justify-between'>
            <img className='w-full max-w-[575px] mx-auto sss:mx-0 mb-8 sss:mb-0' src={person} alt="" />
               <div>

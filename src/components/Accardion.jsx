@@ -22,14 +22,14 @@ const Accardion = () => {
     }
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
   return (
-   <section className='py-[128px] bg-white z-0'>
+   <section className='qqq:py-[128px] eee:py-[50px] py-8 bg-white z-0'>
     <div className='containerb'>
     <div className='tabletmax:flex block justify-between '>
           <div>
             <h2 className='text-#282938 text-center tabletmax:text-left text-2xl 640px:text-[38px] font-semibold leading-[56px]  mb-4'>
               Frequently <br className='hidden tabletmax:block' /> asked questions
             </h2>
-            <Link onClick={handleButtonClick} to="/contact" className='text-#2405F2 text-lg font-medium w-full max-w-[220px] mx-auto block tabletmax:mx-0 leading-8 opacity-[0.87] text-center tabletmax:text-left'>Contact us for more info</Link>
+            <Link onClick={handleButtonClick} to="/contact" className='text-#2405F2 text-lg font-medium flex justify-center leading-8 opacity-[0.87] text-center tabletmax:text-left'>Contact us for more info</Link>
           </div>
           <div className='w-full max-w-[843px] mx-auto tabletmax:mx-0 mt-10 tabletmax:mt-0 transition-all'>
             {mainFaqs.slice(0, 5).map((faq) => {
