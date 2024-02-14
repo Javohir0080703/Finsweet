@@ -12,6 +12,7 @@ import BlogDetail from './pages/BlogDetail'
 import Contact from './pages/Contact'
 import OurBlogDetail from './pages/OurBlogDetail'
 import OurWorkDetail from './pages/OurWorkDetail'
+import PageNotFound from './pages/PageNotFound'
 
 const App = () => {
   const router = createBrowserRouter(
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/our_work/:id" element={<OurWorkDetail/>} />
         <Route path="/Blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path='*' element={<PageNotFound/>} />
       </Route>
     )
    )
