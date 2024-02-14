@@ -10,7 +10,7 @@ const Partners = () => {
                     <span className='text-#282938 text-base leading-7'>Finsweet Users</span>
                 </p>
               </div>
-                <ul className='flex flex-wrap  gap-y-5  gap-x-5 items-center'>
+                <ul className='flex flex-wrap justify-center  gap-y-5  gap-x-5 items-center'>
 
                     <li className='w-full max-w-[156px]  mx-auto ddd:mx-0' >
                         <svg xmlns="http://www.w3.org/2000/svg" width="162" height="32" viewBox="0 0 162 32" fill="none">
