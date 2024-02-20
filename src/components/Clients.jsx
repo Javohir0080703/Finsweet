@@ -53,10 +53,10 @@ const Clients = () => {
                                         <div className="flex items-center  justify-center">
                                        
                                             <button onClick={prevSlide} className="block w-full max-w-[40px] aaa:max-w-[61px] py-[10px] aaa:py-[13px] px-[10px] aaa:px-[17.5px] bg-white rounded-[29px] mr-4">
-                                                <img className="aaa:w-[20px] w-[12px] mx-auto" src={prev} alt="" />
+                                                <img className="aaa:w-[20px] w-[12px] mx-auto" src={prev} alt="prev-icon" />
                                             </button>
                                             <button  onClick={nextSlide} className="block w-full max-w-[40px] aaa:max-w-[61px] py-[10px] aaa:py-[13px] px-[10px] aaa:px-[17.5px] bg-[#5239FA] rounded-[29px]">
-                                            <img className="aaa:w-[20px] w-[12px]" src={next} alt="" />
+                                            <img className="aaa:w-[20px] w-[12px]" src={next} alt="next-icon" />
                                             </button>
                                         </div>
                                         </div>

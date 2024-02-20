@@ -11,7 +11,7 @@ const Procces = () => {
                     procces.map((e)=>{
                         return(
                             <li key={e.id} className='w-full max-w-[272px] mx-auto ddd:mx-0'>
-                                <img className='mb-8 w-full max-w-[272px]' src={line} alt="" />
+                                <img className='mb-8 w-full max-w-[272px]' src={line} alt="img" />
                                 <h3 className='text-#282938 text-2xl font-medium leading-9 mb-2'>{e.title}</h3>
                                 <p className='text-#282938 text-base leading-7'>{e.text}</p>
                             </li>

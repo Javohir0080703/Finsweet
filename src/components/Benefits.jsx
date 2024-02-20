@@ -12,7 +12,7 @@ const Benefits = () => {
                         benefitsdata.map((e) => {
                             return (
                                 <li className='w-full mx-auto qqq:mx-0 max-w-[405px] bg-#F4F6FC pt-[50px] pb-12 pl-12 pr-8' key={e.id}>
-                                    <img className='mb-[22px]' src={e.img} alt="" />
+                                    <img className='mb-[22px]' src={e.img} alt={e.title} />
                                     <h3 className='text-#282938 text-lg ddd:text-2xl font-medium leadidng-[36px] mb-3'>
                                         {e.title}
                                     </h3>

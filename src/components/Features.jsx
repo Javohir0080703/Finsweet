@@ -14,7 +14,7 @@ const Features = () => {
                     featur.map((e)=>{
                         return(
                             <li key={e.id} className='w-full max-w-[405px] bg-white pt-10 aaa:pt-[58px] pb-12 pl-7 aaa:pl-12 pr-5 aaa:pr-8' >
-                                <img className='mb-[22px] w-full aaa:max-w-[32px] max-w-[20px]' src={e.img} alt="" />
+                                <img className='mb-[22px] w-full aaa:max-w-[32px] max-w-[20px]' src={e.img} alt={e.title} />
                                 <h3 className='text-#282938 text-lg aaa:text-2xl font-medium leading-5 aaa:leadidng-[36px] mb-3'>
                                     {e.title}
                                 </h3>
