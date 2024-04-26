@@ -33,7 +33,9 @@ const FeaturesBlog = () => {
         </div>
         <div className='bg-white qqq:py-[128px] eee:py-[90px] py-10'>
            <div className='containerb block sss:flex items-center justify-between'>
-              <div>
+              <div>,
+
+               ,
                 <span classУВЫName='text-black text-lg font-medium leading-8 mb-4 block text-center sss:text-center'>Use Client-first</span>
                  <h3 className='text-#232536 text-xl ddd:text-[38px] font-semibold leading-5 ddd:leading-[56px] mb-4 text-center sss:text-center'>
                  Top agencies and freelancers <br className='hidden sss:block' /> around the world use  <br className='hidden sss:block' /> Client-first 
@@ -54,7 +56,7 @@ const FeaturesBlog = () => {
                  <p className='text-#282938 text-base leading-7 text-center sss:text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br className='hidden sss:block' /> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br className='hidden sss:block' /> veniam, quis nostrud exercitation.</p>
               </div>
            </div>
-        </div>    
+        </div>  
     </section>
   )
 }

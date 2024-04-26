@@ -11,8 +11,6 @@ const HomeAccordion = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   
-  // const [erorr, setError] = useState(false)
-  // window
   const handleButtonClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }

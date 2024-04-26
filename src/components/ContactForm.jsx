@@ -23,11 +23,11 @@ const ContactForm = () => {
 
   const handleSubmitInput = (event) => {
     event.preventDefault();
-    // setNameSend('');
-    // setEmailSend('');
-    // setMessageSend('');
-    // setcontextSend('');
-    // setSubjectSend('')
+    setNameSend('');
+    setEmailSend('');
+    setMessageSend('');
+    setcontextSend('');
+    setSubjectSend('')
     if (contextSend == "" || SubjectSend == "" || nameSend == "" || emailSend == "") {
       setSubject(true)
     } else {

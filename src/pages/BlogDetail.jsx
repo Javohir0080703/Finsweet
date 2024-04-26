@@ -14,7 +14,7 @@ const BlogDetail = () => {
                 <p className='text-#282938 text-sm eee:text-base font-medium leading-7 opacity-[0.87]  text-center '>{blog.detaildatatitle}</p>
                 <p className='text-#282938 text-sm eee:text-base font-medium leading-7 opacity-[0.87] ml-1.5 text-center'>{blog.detaildata}</p>
                </div>
-               <img className='w-full max-w-[1280px] mb-20' src={blog.img} alt="detail-img" />
+               <img className='w-full max-w-[1280px] h-full max-h-[500px] mb-20' src={blog.img} alt="detail-img" />
                <div className='w-full max-w-[840px] mx-auto px-5'> 
                <h2 className='text-#282938 text-center sm:text-xl md:text-[38px] font-semibold  leading-6 sm:leading-10 md:leading-[56px] mb-8'>{blog.detailtitle2}</h2>
                    <p className='text-#282938 text-center text-xs sm:text-base leading-5 sm:leading-7 opacity-[0.7] mb-10'>{blog. detailtitle2text}</p>

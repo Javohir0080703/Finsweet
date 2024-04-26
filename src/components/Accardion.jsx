@@ -26,7 +26,7 @@ const Accardion = () => {
     <div className='containerb'>
     <div className='tabletmax:flex block justify-between '>
           <div>
-            <h2 className='text-#282938 text-center tabletmax:text-left text-2xl 640px:text-[38px] font-semibold leading-[56px]  mb-4'>
+            <h2 className='text-#282938 text-center  text-2xl 640px:text-[38px]  font-semibold leading-[56px]  mb-4'>
               Frequently <br className='hidden tabletmax:block' /> asked questions
             </h2>
             <Link onClick={handleButtonClick} to="/contact" className='text-#2405F2 text-lg font-medium flex justify-center leading-8 opacity-[0.87] text-center tabletmax:text-left'>Contact us for more info</Link>
